@@ -1,0 +1,505 @@
+Photo: Stand News.
+pos: 0.46093277818816747 neg: 0.5390672218118325
+Furthermore, university entry requirements in Hong Kong are almost solely DSE-based, drawing a straight connection between the DSE and future employability that cranks up the pressure on students even further.
+pos: 0.4273055513489021 neg: 0.5726944486510964
+According to the Labour and Welfare Bureau, the unemployment rate was 2.5 percent in January 2017 for people with a BA degree, while it is more than double that for those without one.
+pos: 0.49029739068815154 neg: 0.5097026093118483
+That’s life.” One student from this year’s cohort described the pressure they are under as “so overwhelming that I was unable to catch my breath.” A protest raising awareness of student suicides.
+pos: 0.25335631040561457 neg: 0.7466436895943879
+Police said Au was devastated by the death of her husband.
+pos: 0.4317961609967328 neg: 0.5682038390032664
+Police said he ended his life because his business was failing.
+pos: 0.42435208253021495 neg: 0.5756479174697847
+Au’s mother became worried about her daughter and grandson on Monday when she hadn’t heard from Au.
+pos: 0.4762949115434846 neg: 0.5237050884565149
+Au’s mother found the suicide notes and made an emergency call to 999.
+pos: 0.2565581622339071 neg: 0.7434418377660948
+Soon before 2am on Tuesday, Au and her son were found unconscious on board a seven-seater car stopped in On Yiu Street, Sha Tin.
+pos: 0.02654818326715507 neg: 0.9734518167328458
+Officers found a pot of charcoal ashes in the vehicle’s rear passenger seat.
+pos: 0.10742080202209695 neg: 0.8925791979779025
+He said initial examination showed the pair had been dead for about 12 hours.
+pos: 0.3493831780070378 neg: 0.6506168219929636
+A security camera footage indicated Au left her Ma On Shan home with her son in the car at about 1.30am on Monday, according to the source.
+pos: 0.42426641354831135 neg: 0.5757335864516908
+He said an autopsy would be carried out to determine whether the boy was drugged before the charcoal was set alight.
+pos: 0.3070014674828873 neg: 0.6929985325171124
+They should not feel like they have to hide and keep everything to themselves,” Ng said.
+pos: 0.39283721703701135 neg: 0.6071627829629875
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+And social work expert Terry Lum Yat-sang warns that Hongkongers could be missing telltale early signs.
+pos: 0.4707562283448452 neg: 0.5292437716551535
+They may write a will, give away some of their belongings or say that their life isn’t worth living any more,” he says.
+pos: 0.49649284259894877 neg: 0.5035071574010513
+“When seniors exhibit signs of the problem, families don’t see the need to take action or seek help because they don’t see it as a disease and have normalised the condition,” he says.
+pos: 0.1841120628842603 neg: 0.8158879371157411
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+Dr Liu revealed that Hong Kong has around 1,000 suicides every year and a lot of the mental health problems are due to the stresses of living in the main city.
+pos: 0.24997406697261998 neg: 0.750025933027382
+He also revealed how psychiatrists see around 40 patients per half day leaving no resource or Cognitive Behavioural Therapy and referrals to mental health nurses to take on the task can take up to 12 months.
+pos: 0.3980342316159086 neg: 0.6019657683840945
+You really do value the NHS and its service.
+pos: 0.3399318268890155 neg: 0.6600681731109839
+It stated there was “no substantial direct link between student suicides and the education system” and citing findings obtained from “evidence-based case analysis”.
+pos: 0.36086345790127244 neg: 0.6391365420987305
+“I was appalled with the findings.
+pos: 0.2597699446815402 neg: 0.7402300553184606
+“The test of the pudding is in its eating,” he added.
+pos: 0.27301912152954694 neg: 0.7269808784704533
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+We think you'd also like
+ Crime in Hong Kong The 21-year-old woman discovered with head wounds and marks on neck when mother returned home had bought 100 pieces of plastic cable tie Comments:    Police investigating the case of a Hong Kong woman found dead from suffocation offered new evidence on Tuesday that she might have committed suicide.
+pos: 0.19816339558691629 neg: 0.801836604413075
+Senior Inspector Lo Man-fai of the Kowloon East regional crime unit said initial investigation suggested Cheung had died from suffocation and officers believed the marks on her neck were caused by a plastic cable tie.
+pos: 0.4382363476507796 neg: 0.5617636523492159
+“While investigating if this was murder, we cannot rule out other possibilities such as suicide.” However, more evidence emerged on Tuesday evening to suggest that Cheung might have tried to kill herself.
+pos: 0.07236779059873373 neg: 0.9276322094012696
+Officers from the Police Tactical Unit swept the scene for evidence.
+pos: 0.10160600579917498 neg: 0.8983939942008253
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+The figure marked a slight decline from the last report, which said there were 35 suicides in 2010 and 2011.
+pos: 0.3773599977234122 neg: 0.6226400022765867
+Panel members urged family and friends to be more alert to youngsters showing signs of distress or behaving abnormally.
+pos: 0.1784990854524252 neg: 0.8215009145475749
+But it might be a signal that they are depressed or show they are unable to handle certain difficulties,” Dunn said.
+pos: 0.4776564206326474 neg: 0.5223435793673538
+Some included babies prone to moving around in their sleep at night and falling off the bed, or those who had stopped breathing after they turned over on their stomach to sleep.
+pos: 0.36986009203625464 neg: 0.6301399079637428
+Google has been featuring search results about suicide prevention help and tips more prominently when users look for particular combinations such as “ways to commit suicide”.
+pos: 0.4545821456527004 neg: 0.5454178543473001
+“We did not have this environmental pressure in the last generation.
+pos: 0.11293269110585434 neg: 0.8870673088941465
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+Yip said the committee is discussing with social-media giants, including Facebook and Google, about procedures for handling signs of potential suicides on the internet and how to find those students as quickly as possible.
+pos: 0.21163902198891213 neg: 0.7883609780110848
+The associate director of the HKU center, Liu Kwong-sun, said parents have to spend more time with their children and communicate with them directly, including using the internet.
+pos: 0.47655804916149996 neg: 0.5234419508385009
+Please also read our Ethics Statement.
+pos: 0.4549152585189151 neg: 0.5450847414810838
+Photo: HKFP/Catherine Lai.
+pos: 0.4750000000000001 neg: 0.525
+What is the price of 72 lives?… Under what circumstances will you properly and solemnly respond to the problem of youth suicides, and host a summit on youth suicides?
+pos: 0.2590318267930917 neg: 0.7409681732069129
+It’s only by respecting death that you can respect life,” Shiu said.
+pos: 0.34827942163399406 neg: 0.6517205783660062
+Photo: HKFP/Catherine Lai.
+pos: 0.4750000000000001 neg: 0.525
+Earlier this year, concern groups petitioned Chief Secretary Matthew Cheung, urging him to hold a summit on youth suicides.
+pos: 0.08306490051853559 neg: 0.9169350994814617
+Alliance spokesman Lai Pak-yin said some students indicated they had spent 13 hours a day studying.
+pos: 0.4440034504106642 neg: 0.5559965495893381
+“Can you imagine a youngster having to bury himself in books for so long each day?” Lai asked.
+pos: 0.48256982793061376 neg: 0.5174301720693872
+Inspired by a project in New Zealand, about 10 alliance members placed empty shoes on a pavement in Mong Kok on Sunday and observed a minute of silence to commemorate young people who had committed suicide in Hong Kong.
+pos: 0.358132935395339 neg: 0.6418670646046566
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+Over the past two months, the groups interviewed 631 students, parents, teachers and social workers, and some 90 percent supported the idea of standard studying hours.
+pos: 0.4235485813628424 neg: 0.5764514186371569
+They also urged the government to hold a student suicide prevention summit to listen to opinions from society.
+pos: 0.19850274782139934 neg: 0.801497252178601
+Please also read our Ethics Statement.
+pos: 0.4549152585189151 neg: 0.5450847414810838
+Other employers threatened to never hire its graduates.
+pos: 0.2465342043172234 neg: 0.7534657956827754
+On September 9, a poster written in simplified Chinese and mocking the death of Chinese dissident and Nobel laureate Liu Xiaobo appeared on the same wall.
+pos: 0.014962796200022674 neg: 0.9850372037999747
+He assured that the school would handle the matter fairly in accordance with its rules and regulations.
+pos: 0.4741534892705352 neg: 0.5258465107294631
+At 11:30 the same morning, a 17-year-old male student jumped from the rooftop of the Domain Mall in Yau Tong.
+pos: 0.3222222347708173 neg: 0.6777777652291869
+The Samaritans run a 24-hour multilingual suicide prevention hotline +852 2896 0000 or e-mails can be sent to jo@samaritans.org.hk.
+pos: 0.2722676969760037 neg: 0.7277323030239966
+A teacher surnamed Yam said he joined Sunday’s protest because he believes the Hong Kong Diploma of Secondary Education examination is causing too much stress for students.
+pos: 0.2763107658251057 neg: 0.723689234174898
+Yam told Apple Daily that each time a student commits suicide, he feels as if he himself had been the executioner as he had been teaching them and giving them homework.
+pos: 0.42974161734796557 neg: 0.5702583826520333
+A parent at the protest, a woman surnamed Wong, said that her daughter had been forced to start writing at the young age of two.
+pos: 0.4837199329260632 neg: 0.5162800670739388
+However, she cited official statistics as showing that only 40 percent of the schools had been given the green light for the program.
+pos: 0.25763631932854875 neg: 0.7423636806714556
+Given this situation, Tong urged the government to allow more schools to benefit from the scheme.
+pos: 0.15016828664345255 neg: 0.8498317133565487
+“Being aware of people’s mental health issues is fundamental to suicide prevention.
+pos: 0.3328394085415737 neg: 0.667160591458427
+“We want a concert in Chris and Chester’s memory.
+pos: 0.34273060027574753 neg: 0.6572693997242514
+The Raptors will play Audioslave’s Be Yourself and a song by Linkin Park, New Divide.
+pos: 0.45101504310185475 neg: 0.5489849568981476
+“Tim was the founding member of the band and the guitarist.
+pos: 0.23637995807265805 neg: 0.7636200419273392
+They just want you to listen to them, to care about them.
+pos: 0.49139039061091505 neg: 0.5086096093890851
+Suen says a close friend of Aaron’s fell into a downward spiral after his death.
+pos: 0.2194752093218511 neg: 0.7805247906781465
+“He needed someone to listen to him.
+pos: 0.49886607191880783 neg: 0.5011339280811916
+24-hour hotline at Suicide Prevention Services: +852 2382 0000 24-hour hotline at Samaritan Befrienders Hong Kong: +852 2389 2222 Society for the Promotion of Hospice Care: +852 2868 1211 You are signed up.
+pos: 0.36495172407124327 neg: 0.6350482759287568
+Investigators said the boy jumped off the building because he could not deal with the death of his grandmother and the impending divorce of his parents.
+pos: 0.4918837910782119 neg: 0.5081162089217874
+They proposed a government-led anti-teenage suicide summit to help tackle the problem.
+pos: 0.1306885212030457 neg: 0.8693114787969561
+Here is the 24-hour multilingual suicide prevention hotline of The Samaritans: +852 2896 0000 (or email [email protected]).
+pos: 0.46673976383150517 neg: 0.5332602361684958
+The furore, however, did not stop a similar message being put up at another institution, City University, and another poster – this time in simplified, rather than traditional, Chinese – appearing at EdU “congratulating” late Chinese dissident and Nobel laureate Liu Xiaobo for dying and his wife Liu Xia for being under house arrest.
+pos: 0.1250878150482578 neg: 0.8749121849517385
+The original taunt, aimed at grieving Choi, appeared on Thursday evening at the EdU campus.
+pos: 0.39936269991339896 neg: 0.6006373000866021
+I do not think it is fair to students and teachers,” Lai said.
+pos: 0.3145521579476855 neg: 0.6854478420523153
+“Teachers are role models for students.
+pos: 0.4651854477223477 neg: 0.5348145522776531
+On Saturday, EdU staff removed another message “congratulating” Liu Xiaobo and his wife.
+pos: 0.48191856853102816 neg: 0.5180814314689732
+While EdU president Stephen Cheung Yan-leung offered “emotional responses” rejecting remarks about Choi’s son’s death on Friday, such responses were absent for the Liu taunt, Lai said.
+pos: 0.2905078927110668 neg: 0.7094921072889327
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+The eldest son of Education Undersecretary Choi Yuk-lin died after falling from a Tsim Sha Tsui flat on Thursday morning.
+pos: 0.38119498840408567 neg: 0.6188050115959137
+The other man wore glasses, a white t-shirt and a dark-coloured jumper.
+pos: 0.30907641511250006 neg: 0.6909235848875002
+Photo: i-Cable screenshot.
+pos: 0.4750000000000001 neg: 0.525
+This is welcome news.
+pos: 0.4915017219992145 neg: 0.5084982780007858
+For example, it has given schools more resources to promote mental health, and increased funding for related research.
+pos: 0.3825999061329271 neg: 0.6174000938670697
+We can all play a part by choosing our words wisely, showing empathy, and being alert to those around us, as well as taking care of our own mental health.
+pos: 0.3990939459396875 neg: 0.6009060540603112
+But experts say there are more fundamental causes that parents and educators should address.
+pos: 0.3656024121160796 neg: 0.6343975878839223
+Two others were rescued from attempted suicides.
+pos: 0.24778945224397714 neg: 0.752210547756023
+The ADB report finds that companies offering shadow education operate as chain stores with multiple locations and some are publicly listed on the Hong Kong Stock Exchange.
+pos: 0.4443127221404739 neg: 0.5556872778595294
+By 2016, there were more than 900 tuition centers focused on high school pupils.
+pos: 0.3683928111911589 neg: 0.631607188808839
+Some attribute the "success in Asian education" to rote learning and social pressure.
+pos: 0.35685836626952644 neg: 0.643141633730472
+But despite recent positive reforms in the education system, there is still room for improvement.
+pos: 0.3726390093420022 neg: 0.6273609906579994
+A college entry exam used to gain entry to US universities was recently canceled in South Korea and Hong Kong due to an alleged breach of test materials.
+pos: 0.12335693456537829 neg: 0.8766430654346262
+Providing care at a critical moment saves lives Comments:    Sunday is World Suicide Prevention Day.
+pos: 0.4975912758820215 neg: 0.5024087241179793
+The winning video features a police negotiator’s work to save lives.
+pos: 0.48769684536688374 neg: 0.5123031546331167
+Suicide prevention is not just something experts can do; everyone can help.
+pos: 0.24498977582703804 neg: 0.755010224172962
+Sometimes, taking a minute to help those in need really can save a life.
+pos: 0.47838512175047093 neg: 0.5216148782495303
+Suicide is still a major public health concern.
+pos: 0.45482006199083824 neg: 0.5451799380091605
+There are about 800,000 suicides every year worldwide.
+pos: 0.36969290737692684 neg: 0.6303070926230742
+Take a minute to care for them – it will make a difference.
+pos: 0.3616365161824253 neg: 0.638363483817574
+We encourage individuals contemplating suicide to give themselves another minute to seek professional assistance, to walk out of the darkness towards the light.
+pos: 0.4940955000412184 neg: 0.5059044999587797
+Together, we can prevent suicides.
+pos: 0.40454259260775016 neg: 0.5954574073922496
+Where to get help ● 24-hour hotline at Suicide Prevention Services: +852 2382 0000 ● 24-hour hotline at Samaritan Befrienders Hong Kong: +852 2389 2222 Society for the Promotion of ● Hospice Care: +852 2868 1211 You are signed up.
+pos: 0.39622287335332923 neg: 0.6037771266466675
+It’s arguable whether the perfect scores produce adults who are critical thinkers or merely rote learners, and concerns have been expressed about a lack of development in behavioural and social skills.
+pos: 0.3142676279724771 neg: 0.6857323720275268
+Hong Kong ranked ninth in the last Pisa tests, below Taiwan (fourth) and Macau (sixth).
+pos: 0.020306768578613247 neg: 0.979693231421387
+Finland ranked fifth in the UN’s 2016 World Happiness Report; Singapore ranked 26th.
+pos: 0.4576996949237976 neg: 0.5423003050762049
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+It’s arguable whether the perfect scores produce adults who are critical thinkers or merely rote learners, and concerns have been expressed about a lack of development in behavioural and social skills.
+pos: 0.3142676279724771 neg: 0.6857323720275268
+Hong Kong ranked ninth in the last Pisa tests, below Taiwan (fourth) and Macau (sixth).
+pos: 0.020306768578613247 neg: 0.979693231421387
+Finland ranked fifth in the UN’s 2016 World Happiness Report; Singapore ranked 26th.
+pos: 0.4576996949237976 neg: 0.5423003050762049
+-- SCMP  To read the original article, go here: http://www.scmp.com/lifestyle/families/article/2111822/downsides-singapo... 2017 © New Straits Times.New Straits Times Press (M) Berhad (4485-H).All Rights Reserved.
+pos: 0.49825979609198523 neg: 0.5017402039080134
+The preparatory committee is being chaired by Chief Secretary Matthew Cheung Kin-chung.
+pos: 0.0982164877564937 neg: 0.9017835122435075
+“All the government’s actions are reactive and remedial to the ad hoc children’s health problems,” the paediatrician says.
+pos: 0.23493408497124166 neg: 0.7650659150287602
+“When the problems are temporarily relieved, no more follow-up measures are taken.” Wong points to the rising numbers of youth suicides as an example of officials’ inadequate response, slamming them for failing to pinpoint causes.
+pos: 0.08909897101659675 neg: 0.9109010289834026
+But Shiu laments that boosting the next generation’s sense of national identity seems to be the government’s top priority for children at the moment.
+pos: 0.41731283743649716 neg: 0.5826871625635038
+“But they might not be happy.” You are signed up.
+pos: 0.36068430563800874 neg: 0.6393156943619906
+Teachers at the Tuen Mun school could not substantiate the woman’s claims, but the boy’s parents rejected their findings and vowed to pull him out of the school.
+pos: 0.48162923009517516 neg: 0.5183707699048237
+Citing official figures, Ip said there was an average of 200 bullying incidents from schools across the city each year, but the figure had dropped to about 100 cases last year.
+pos: 0.38351166748961507 neg: 0.6164883325103803
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+One cannot help but consider Alexandre Dumas’ witticism when approaching Mr Yeung’s article: “All generalisations are dangerous.
+pos: 0.07401075486855495 neg: 0.9259892451314428
+When new clashes with old, neither side should dismiss the other’s perspectives too readily.
+pos: 0.3656474846573443 neg: 0.6343525153426559
+Wingho Chan, Tsim Sha Tsui, and Kevin Chan, Mid-Levels You are signed up.
+pos: 0.14040055613686087 neg: 0.8595994438631384
+The pressure they feel is often exacerbated by their workload.
+pos: 0.4523697106752936 neg: 0.5476302893247068
+It is understandable that they will then feel pressure and be depressed, facing hours of homework after an already long school day.
+pos: 0.35694078178924465 neg: 0.6430592182107565
+And things can be worse for them if their parents have unrealistic expectations of what they can achieve, and they are unable to get the marks that are expected of them.
+pos: 0.2548616792122541 neg: 0.7451383207877441
+Jessie Leung Cheuk-yau, Kowloon Tong You are signed up.
+pos: 0.47708150930900645 neg: 0.522918490690993
+Another was stopped by authorities.
+pos: 0.40166912205868044 neg: 0.5983308779413201
+She is 12.
+pos: 0.49427083333333327 neg: 0.5057291666666667
+It's the latest in a rash of suicides by students in Hong Kong.
+pos: 0.03999561659642019 neg: 0.9600043834035784
+“In the classroom, I was not allowed to move, drink water, eat, go to the toilet, or talk,” Chan Yu-ling said at the hearing.
+pos: 0.34973126083148 neg: 0.6502687391685192
+“The teachers spent little time teaching.
+pos: 0.3306600268275424 neg: 0.6693399731724564
+Less time with family, too, might be contributing to the problem.
+pos: 0.45337979818715024 neg: 0.5466202018128496
+The Hong Kong Education Bureau is taking action.
+pos: 0.380139630573087 neg: 0.6198603694269125
+It announced new measures to combat the problem, including improved student counseling in schools, more seminars to alert teachers and parents to warning signs and a committee to research long-term fixes.
+pos: 0.4692371517883893 neg: 0.5307628482116079
+According to official statistics cited in the report, the number of children and adolescents being treated for mental illness in public hospitals has increased by more than 50 per cent from 18,900 in 2011-12 to 28,800 in 2015-16.
+pos: 0.33615369818084406 neg: 0.6638463018191574
+They said the government’s mental health policy does not have sufficient resources, has an unequal distribution of resources and lacks focus and long-term planning.
+pos: 0.4095308527866811 neg: 0.5904691472133222
+For primary school students, it was 5.8, with the main reason being worries about school performance.
+pos: 0.46433552458733096 neg: 0.5356644754126701
+The guard had found a man lying on the ninth-floor podium of one of the tower blocks in the complex, a police spokeswoman said.
+pos: 0.4927781714289023 neg: 0.507221828571097
+He was taken unconscious to Queen Elizabeth Hospital in Yau Ma Tei, where he was later certified dead.
+pos: 0.05965106362477795 neg: 0.9403489363752212
+She only realised he had jumped when officers later arrived.
+pos: 0.12046714394165038 neg: 0.8795328560583476
+He was a sports fan and liked riding cycling and running.
+pos: 0.10212627483119385 neg: 0.8978737251688046
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+“The teachers spent little time teaching.
+pos: 0.3306600268275424 neg: 0.6693399731724564
+In Hong Kong, the spate of suicides has led the government to establish a Committee on Prevention of Student Suicides last year.
+pos: 0.2751918310776577 neg: 0.7248081689223389
+The local education authority opted instead to replace the TSA with new testing requirements called Basic Competency Assessments (BCA), which Eddie Ng, secretary for the education bureau (link in Chinese), said has helped ease the excessive drilling.
+pos: 0.25232952147104415 neg: 0.7476704785289618
+Photo: Chong Fat via Wikicommons.
+pos: 0.1655705360078914 neg: 0.8344294639921082
+She was prevented from doing so by firefighters and policemen.
+pos: 0.05890218813683672 neg: 0.9410978118631622
+Police officers were called to the scene by a security guard working at Kam Pong House.
+pos: 0.20314744537881035 neg: 0.7968525546211882
+The girl left a suicide note before she fell, prompting further concerns from mental health campaigners over the academic intensity of the schooling system.
+pos: 0.3561911161465419 neg: 0.6438088838534621
+The Education Bureau is considering recommendations from the Committee on Prevention of Student Suicides, which was established after a spate of student suicides last year.
+pos: 0.2644604665221532 neg: 0.735539533477847
+Here is the 24-hour multilingual suicide prevention hotline of The Samaritans: +852 2896 0000 (or email [email protected]).
+pos: 0.46673976383150517 neg: 0.5332602361684958
+Civic Passion lawmaker Cheng Chung-tai took a shot at Choi on his Facebook page while commenting on recent suicides at the start of the academic new year.
+pos: 0.1324179321532027 neg: 0.8675820678467938
+“Don’t blame the crowd for being insensitive, because this karma is what you planted by yourselves.” Additional reporting by Shirley Zhao You are signed up.
+pos: 0.02629520759813396 neg: 0.9737047924018695
+The eldest son of Education Undersecretary Choi Yuk-lin died after falling from a Tsim Sha Tsui flat on Thursday morning.
+pos: 0.38119498840408567 neg: 0.6188050115959137
+In this case, the offensive acts are shameful – we hope that the posters of the signs will be able to self-reflect,” it said.
+pos: 0.10366831794719877 neg: 0.8963316820527996
+You don’t even know how to be someone’s mother, how can you educate other people’s children?
+pos: 0.3542579695481915 neg: 0.6457420304518079
+“Demand that Education University use CCTV to uncover the inhumane monsters, and expel them from the school, to prevent this animal from becoming a teacher and misguiding their children!” he said.
+pos: 0.44525000517282426 neg: 0.5547499948271759
+“We have still not been able to confirm if the involved party is a student of the university.
+pos: 0.4553334648801136 neg: 0.5446665351198873
+A citywide survey found that nearly half of secondary school students showed signs of depression.
+pos: 0.17862472430201798 neg: 0.8213752756979819
+She cited a friend whose mother would severely chastise her for any grade lower than an A.
+pos: 0.334217169673658 neg: 0.6657828303263413
+A second factor is the lack of downtime.
+pos: 0.23182697165276572 neg: 0.7681730283472346
+We need to do more.
+pos: 0.47748254638985843 neg: 0.5225174536101415
+We think you'd also like
+The Diplomat Despite rising numbers of suicides, Hong Kong official insist the education system is not to blame.
+pos: 0.03483390087819935 neg: 0.9651660991218025
+Just a month earlier, the city’s legislature had convened a special session to address the rising number of student suicides.
+pos: 0.4764603856116803 neg: 0.5235396143883203
+“In the classroom, I was not allowed to move, drink water, eat, go to the toilet, or talk,” said Chan Yu-ling, a fourth-grade primary school student, at the Education Bureau’s Committee on Prevention of Student Suicides.
+pos: 0.13747532001573162 neg: 0.8625246799842655
+“The teachers spent little time teaching.
+pos: 0.3306600268275424 neg: 0.6693399731724564
+The spate of suicides has led the government to establish a Committee on Prevention of Student Suicides, which called for a review of the education system in November of last year.
+pos: 0.39730637505549043 neg: 0.6026936249445098
+This was later echoed by Education Secretary Eddie Ng Hak-kim.
+pos: 0.44804635267199727 neg: 0.5519536473280036
+While Wong said the government should carry out a survey of students’ mental health, school principals hope more counselling services could be allocated.
+pos: 0.2336868218937547 neg: 0.7663131781062417
+More than half felt useless.
+pos: 0.3916539713506791 neg: 0.6083460286493209
+Victor Fung Keung is an adjunct professor at Hong Kong Shue Yan University You are signed up.
+pos: 0.3041583642001866 neg: 0.6958416357998148
+They were responding to a report that goes to great pains to avoid saying that academic pressure is an important factor in student suicide.
+pos: 0.3127704949056277 neg: 0.6872295050943705
+Numerous surveys show the biggest sources of pressure for Hong Kong students are tests and homework.
+pos: 0.31099803665873965 neg: 0.6890019633412585
+We couldn’t agree more, and the evidence in this case is strong and clear: excessive testing, homework, and academic pressure may produce high test results, but they are overwhelming Hong Kong’s children.
+pos: 0.4546056599221083 neg: 0.545394340077888
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+We think you'd also like
+A 14-year-old boy ended his life on Tuesday morning.
+pos: 0.1977901868720518 neg: 0.8022098131279468
+He was the fifth to die in six attempted suicides by Hong Kong students within 17 days.
+pos: 0.28262985407000135 neg: 0.7173701459299978
+Photo: Wikicommons.
+pos: 0.4750000000000001 neg: 0.525
+The school said in a statement that its teachers and students were devastated by the news.
+pos: 0.28298991765855175 neg: 0.7170100823414487
+She was prevented from doing so by firefighters and police officers.
+pos: 0.09804834422439294 neg: 0.9019516557756061
+She highlighted a current exhibition on graphene – a planar form of carbon that is super lightweight, highly conductive and ultra-strong – featuring research from Polytechnic University and an upcoming exhibition featuring a solar car developed by students from the Vocational Training Council.
+pos: 0.22602170176813616 neg: 0.7739782982318683
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+It is understood that she tumbled more than 10 metres down the slope, with a police spokesman saying that she appeared to have suffered injuries to her head and limbs.
+pos: 0.19295034112460513 neg: 0.8070496588753984
+Doctors there declared her dead.
+pos: 0.4947506426146145 neg: 0.5052493573853853
+In August, two hikers from the mainland – a 31-year-old man and a 47-year-old woman – ran into trouble and were stranded on the same cliff in the middle of a raging storm, resulting in an extensive rescue operation.
+pos: 0.22327705764514855 neg: 0.7767229423548515
+They had gone hiking after the Hong Kong Observatory issued the tropical cyclone warning signal No 1 – the lowest on the city’s alert scale – for Severe Tropical Storm Pakhar.
+pos: 0.03090220775052177 neg: 0.9690977922494735
+But during the rescue mission, that increased to a No 8 signal warning as the city was blasted with heavy rain and wind speeds of up to 117km/h.
+pos: 0.10557762912487298 neg: 0.8944223708751292
+Four firefighters had to use their raincoats as a makeshift tent and spend a night on the cliff side to keep the hikers alive.
+pos: 0.4235301571292115 neg: 0.5764698428707886
+The group reached Kau Nga Ling, which literally translates as “dog teeth ridges”, a name derived from the steep gradient of slopes in the area.
+pos: 0.11275364017563022 neg: 0.8872463598243693
+But while climbing up a spot dubbed “slim chance of survival” by mountaineers, he slipped and fell about 30 metres.
+pos: 0.19164187770655663 neg: 0.808358122293442
+He was certified dead at the scene.
+pos: 0.09037319331911833 neg: 0.9096268066808814
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+"In my case, after going up a class, I have lots of tests, homework, and evaluation.
+pos: 0.32299020661813616 neg: 0.6770097933818643
+Frankly speaking, I'm a little tired and confused," said Siu who is in her mid-teens.
+pos: 0.1664137005144541 neg: 0.8335862994855455
+she asked.
+pos: 0.4727788724195064 neg: 0.5272211275804936
+More than 10 percent of Hong Kong students think of suicide, was one of the findings from a research team from the Hong Kong Polytechnic University.
+pos: 0.34801703431478853 neg: 0.6519829656852114
+Hong Kong's working hours are 50 hours a week, the longest in the world, according to a UBS survey.
+pos: 0.35341361359549545 neg: 0.6465863864045029
+They also pray with their children.
+pos: 0.23077275027702152 neg: 0.7692272497229784
+Kung said he would refer to the core values of the Catholic Church and the "Half Full and Half Empty theory" to counsel his students.
+pos: 0.18442884080310637 neg: 0.81557115919689
+"Learn to look at your cup of water as being half full instead of half empty.
+pos: 0.33515679683864635 neg: 0.6648432031613529
+The Education Bureau is considering recommendations from the Committee on Prevention of Student Suicides, which was established after a spate of student suicides last year.
+pos: 0.2644604665221532 neg: 0.735539533477847
+If you need help, The Samaritans runs a 24-hour multilingual suicide prevention hotline on +852 2896 0000.
+pos: 0.3035582994662052 neg: 0.6964417005337953
+Hong Kong's government is investigating a recent rise in the number of student suicides.
+pos: 0.3783660961051543 neg: 0.6216339038948476
+It is recommending counselling for young people under pressure and better training for teachers.
+pos: 0.4488753220482495 neg: 0.5511246779517489
+Hong Kong's government is investigating a recent rise in the number of student suicides.
+pos: 0.3783660961051543 neg: 0.6216339038948476
+It is recommending counselling for young people under pressure and better training for teachers.
+pos: 0.4488753220482495 neg: 0.5511246779517489
+Al Jazeera's Sarah Clarke reports from Hong Kong.
+pos: 0.49116955834096737 neg: 0.5088304416590338
+The story of a most-wanted fugitive and billionaire.
+pos: 0.2894497411580062 neg: 0.7105502588419934
+Investigators found no suspicious signs on Sunday.
+pos: 0.3816996049227797 neg: 0.618300395077221
+Investigators found that they had left the flat together at about 9am on Sunday morning and returned about 20 minutes later with a bag of what was thought to be charcoal, according to the source.
+pos: 0.39417907507048183 neg: 0.6058209249295199
+Where to get help – 24-hour hotline at Suicide Prevention Services: +852 2382 0000 – 24-hour hotline at Samaritan Befrienders Hong Kong: +852 2389 2222 – Society for the Promotion of Hospice Care: +852 2868 1211 You are signed up.
+pos: 0.39622287335332923 neg: 0.6037771266466675
+Despite setting up the ‘Committee on Prevention of Student Suicides’ in March 2016, the government’s response thus far has been underwhelming.
+pos: 0.19426469653980233 neg: 0.8057353034601952
+Sign up here.
+pos: 0.4026000699843295 neg: 0.5973999300156706
+Crime in Hong Kong No injuries discovered on body of Form Six student, who had gone missing after leaving her Mid-Levels home on Sunday Comments:    The citywide search for a teenage girl who went missing after leaving her Mid-Levels home ended on Monday afternoon with the discovery of her body in Victoria Harbour.
+pos: 0.047207819950394504 neg: 0.9527921800496034
+No injuries were found on the body, and initial investigations found nothing suspicious, according to police.
+pos: 0.39950271260938663 neg: 0.600497287390615
+She lived with her parents in a luxury flat on Babington Path in the Mid-Levels.
+pos: 0.27066276970229985 neg: 0.7293372302977001
+Patrolling officers were alerted to look out for the girl, and police issued a public appeal for help in the search.
+pos: 0.1065568252979743 neg: 0.8934431747020272
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+The suggestion to review the education system, which is known to pressure students with homework and tests, was briefly mentioned at the end of the report.
+pos: 0.49880849267903304 neg: 0.5011915073209678
+She said more teachers should be hired so the ratio of classes to teachers in primary schools could be increased from the current 1:1.5 to 1:1.9.
+pos: 0.255884037552849 neg: 0.7441159624471484
+Education lawmaker Ip Kin-yuen said the bureau was shirking responsibility and a thorough review of the education system was needed.
+pos: 0.41699949936156 neg: 0.5830005006384394
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+It found that 20 percent of the victims were suffering from mental health problems, compared with overseas figures of about 90 percent.
+pos: 0.48287549817058784 neg: 0.5171245018294135
+Please also read our Ethics Statement.
+pos: 0.4549152585189151 neg: 0.5450847414810838
+Police found blood and signs of a fight in flat belonging to the man and woman Comments:    Police were investigating a suspected murder-suicide on Monday night after a woman was found dead next to her husband, both having fallen from their 28th-floor flat in a luxury apartment block.
+pos: 0.13577590127831676 neg: 0.864224098721679
+Officers found a pool of blood and damaged furniture in the living room of the couple’s flat, and a trail of bloody footprints leading to the balcony from which they fell.
+pos: 0.2669058491200239 neg: 0.7330941508799725
+Fong Yin-ting, 29, and her husband Chow Wai-fai, 30, fell from the flat in The Coronation, Yau Ma Tei.
+pos: 0.44590698653509897 neg: 0.5540930134649014
+A security guard found their bodies and called police just before 6.30am.
+pos: 0.452644469296301 neg: 0.5473555307036995
+The husband had been accused of having extramarital affairs, and had moved out of the flat last week.
+pos: 0.3997533759463266 neg: 0.600246624053675
+Police said Chow got back to the flat before 5am, when neighbours heard what sounded like a row inside the flat.
+pos: 0.44745495408253866 neg: 0.552545045917459
+They fell onto the patios of fifth-floor flats.
+pos: 0.39496196632935093 neg: 0.6050380336706486
+Police broke into the couple’s flat, which was locked from inside, and found no one else inside.
+pos: 0.4969152747208302 neg: 0.5030847252791696
+“A pool of blood was found in the living room, where some furniture was moved and damaged, suggesting there was a fight,” a police source said.
+pos: 0.18814684563516001 neg: 0.8118531543648377
+Knives were found in the kitchen basin and police believed one of them, about 20cm long, had been used as a weapon.
+pos: 0.1252556708967924 neg: 0.8747443291032068
+He said further tests were needed to establish the cause of her death.
+pos: 0.3422287129121414 neg: 0.6577712870878579
+You are signed up.
+pos: 0.3363673455759557 neg: 0.6636326544240443
+We think you'd also like
+
+Police are investigating a suspected murder-suicide case involving a man and his wife who were found dead after falling from their luxury apartment in Yau Ma Tei in the early hours of Monday, Apple Daily reports.
+pos: 0.23556770823255843 neg: 0.764432291767442
+Officers found a pool of blood and damaged furniture in the living room of the couple’s flat, and a trail of bloody footprints leading to the balcony.
+pos: 0.34432805711707637 neg: 0.6556719428829246
+The Food and Environmental Hygiene Department and the Information Services Department have offered their condolences to the families of the couple.
+pos: 0.19843378267952252 neg: 0.8015662173204811
+Their apartment was a mess, with signs of a fight, pools of blood, bloody footprints and a 15-centimeter ceramic knife.
+pos: 0.010709316392790767 neg: 0.9892906836072112
+Chow was a 30-year-old pest unit supervisor in the Food and Environmental Hygiene Department's eastern district.
+pos: 0.31967638748206706 neg: 0.6803236125179334
+Surveillance footage showed Chow entered the estate's Block 7 alone, and police are now looking for the cab driver who drove him to The Coronation at 1 Yau Cheung Rd.
+pos: 0.31299329535236126 neg: 0.6870067046476417
+After 5am, the pair fell from the 28B flat to the fifth-floor podium.
+pos: 0.22834638570906235 neg: 0.7716536142909385
+Both victims had multiple bone fractures and internal injuries.
+pos: 0.19233841556152995 neg: 0.8076615844384717
+Police had to collect evidence under umbrellas in case crucial forensic information was lost as heavy rain pounded Hong Kong.
+pos: 0.16547709400226615 neg: 0.8345229059977375
+Yau Tsim Mong Regional Crime Unit is investigating, with West Kowloon Police Tactical Unit assisting.
+pos: 0.01832713432692422 neg: 0.9816728656730734
+Chow worked at the FEHD while the wife had worked as a Home Affairs Department information officer before transferring back to the Information Services Department headquarters.
+pos: 0.25046633034652327 neg: 0.7495336696534811
+Please also read our Ethics Statement.
+pos: 0.4549152585189151 neg: 0.5450847414810838
+There has been a rise in student suicides in the city in recent years.
+pos: 0.49214821605299897 neg: 0.507851783947

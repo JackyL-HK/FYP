@@ -1,3 +1,4 @@
+
 Three letters that strike fear into every Hong Kong student and cause debilitating anxiety. | student
 With this year’s exams starting, we need to raise awareness of the tremendous pressure Hong Kong students are under and be mindful of its dangers. | students
 the public examination students take in the final year of secondary school – is among the most high-pressure exams in the world. | students
@@ -38,9 +39,9 @@ Dr Liu revealed that Hong Kong has around 1,000 suicides every year and a lot of
 The Centre was set up 15 years ago in response to the high suicide rates – and it is making a difference.   | suicide
 Dr Liu encouraged the students to remain positive, remain committed and passionate and help make a change for mental health. | students
 I found it fascinating that they were talking about housing being a factor in suicide rates and a psychiatrist with his own practise cannot even afford to live in Hong Kong and has a house on a different island. | suicide
-(0)116 255 1551
+(0)116 255 1551 
 
-
+  
  Suicides in Hong Kong Criticisms that her views were disregarded come as officials seek to engage young people in policymaking Comments:     | Suicides
 When Althea Suen Hiu-nam, then president of the University of Hong Kong’s student union, received a phone call from the Education Bureau inviting her to the committee on prevention of student suicides, little did she know the outcome would deviate far from her expectations. | student
 From 2013 to last year, 71 pupils and students aged between 10 and 30 killed themselves, prompting the government to set up the ad hoc committee to tackle the issue in March last year. | students
@@ -141,7 +142,9 @@ An 11-year-old boy and a 17-year-old Secondary 6 student jumped to their deaths
 At 11:30 the same morning, a 17-year-old male student jumped from the rooftop of the Domain Mall in Yau Tong. | student
 Social-welfare-sector lawmaker Shiu Ka-chun accused Chief Executive Carrie Lam Cheng Yuet-ngor at the Legislative Council on Thursday of lack of concern about youngsters committing suicide. | suicide
 A total of 72 students committed suicide in the past two years in the city, Shui said, adding: “72 is not a number | students
-The Samaritans run a 24-hour multilingual suicide prevention hotline +852 2896 0000 or e-mails can be sent to jo@samaritans.org.hk. | suicide
+The Samaritans run a 24-hour multilingual suicide prevention hotline +852 2896 0000 or e-mails can be sent to jo@samaritans.org.hk.
+
+ | suicide
 More than 100 people took part in a barefoot march on Sunday in Hong Kong, calling on the government to pay more attention to the issue of student suicides.   | student
 The rally, led by members from two concern groups — the Civil Alliance for Student Suicide Prevention, and Parents United of Hong Kong | Student
 During the event, protesters demanded that Chief Executive Carrie Lam Cheng Yuet-ngor take the youth suicide problem seriously and carry out changes in the education system, Apple Daily reports. | suicide
@@ -155,7 +158,7 @@ The concern groups responded by stating that the summit would not tackle each su
 Yam said he joined Sunday’s protest because he believes the Hong Kong Diploma of Secondary Education examination is causing too much stress for students. | students
 Yam told Apple Daily that each time a student commits suicide, he feels as if he himself had been the executioner as he had been teaching them and giving them homework. | student
 As the Hong Kong education system puts too much stress on results, many schools had pushed their students too hard and made matters worse. | students
-- Contact us at [email protected] EL/BN/RC
+- Contact us at [email protected] EL/BN/RC 
  Music Stunned by the suicides of Soundgarden’s Chris Cornell and Linkin Park’s Chester Bennington, and of people close to band members, The Raptors are joining The David Bowie Knives, Jimmy2Times and The Privateers for a benefit gig at Kitec Comments:    Last May, singer Chris Cornell – the frontman of Soundgarden and a member of Audioslave – was found dead in a Detroit hotel room. | suicides
 The suicides shocked and saddened music fans around the world, and in Hong Kong, local rock band The Raptors was especially hard hit. | suicides
 Both he and Suen have lost someone close to them to suicide. | suicide
@@ -297,15 +300,25 @@ Such learning modes are believed to dominate classroom behaviour for Chinese stu
 Finnish students have little or no homework, and there is no private tuition culture in the country. | students
 Currently, a student’s Primary School Leaving Examination aggregate is the sum of T-scores from all four subjects taken. | student
 Ngerng concludes that the change “still puts excessive focus on academic results”, and that students will actually find it harder to obtain higher scores. | students
+In 2015, the city state took first place in the Pisa (Programme for International Student Assessment) rankings – maths, reading and science tests for 15-year-olds in 72 countries and regions. | Student
+In 2015, there were a reported 27 suicides among 10- to 19-year-olds in Singapore, double that of the previous year. | suicides
+Hong Kong’s student suicide rate is also cause for concern. | student
+A report commissioned by the government, made public early this year, revealed that 71 students took their lives between 2013 and 2016. | students
+As a teacher, I hardly push my students that way. | students
+I have one 8-year-old student taking multiple tuition classes from multiple tutors per subject, amounting to 11 tuition sessions a week. | student
+High student-to-teacher ratios are a big problem in Singaporean schools, Tan says, but pressure also stems from the practice of streaming – with pupils of the same year being segregated into different classes based on results and assessments in several key gateways. | student
+However, segregation of “bright and slow” students still happens in Hong Kong, in the form of school banding. | students
+Students undergo two major exams before even leaving primary school. | Students
+I’m seeing students, especially from China, struggle because they’re used to memorising answers. | students
+Sisson advocates a democratic, student-centred pedagogy, a teaching ethos by which students play a significant role in defining course policies, materials covered, and other aspects of schooling. | student
+Chan writes: “The popular view is that the stresses of learning and need to excel academically leave the Chinese student with little choice but to resort to rote learning of the essentials to pass the examinations ... | student
+Such learning modes are believed to dominate classroom behaviour for Chinese students in Hong Kong, China and Southeast Asia. | students
+Finnish students have little or no homework, and there is no private tuition culture in the country. | students
+Currently, a student’s Primary  School Leaving Examination aggregate is the sum of T-scores from all four subjects taken. | student
+Ngerng concludes that the change “still puts excessive focus on academic results”, and that students will actually find it harder to obtain higher scores. | students
 But University of Hong Kong professor Paul Yip Siu-fai, who last year was appointed head of the Education Bureau’s committee on student suicide prevention as the number of cases spiked in the city, expressed scepticism over the Baptist study. | student
 Statistics from the Centre for Suicide Research and Prevention, where Yip serves as director, reveal 69 young people aged under 24 took their lives last year – four more than in 2015. | Suicide
 Wong points to the rising numbers of youth suicides as an example of officials’ inadequate response, slamming them for failing to pinpoint causes. | suicides
-We refer to the article by Philip Yeung (“Unruly students in Hong Kong are the product of a failed education system devoid of rich reading”, January 25). | students
-Yeung proposes that “rich reading” may mend misguided angry protesters and avert student suicides, byproducts of an absent moral compass. | student
-Asserting that student suicides could be prevented by “escapist reading”, Yeung ignores deeper psychological, societal, and cultural elements. | student
-It is extremely insensitive of him to use the recent surge in student suicides to advance his premise of promoting “rich reading”, which he not once defines. | student
-We agree with him on the dangers of rote learning, in so far as dysfunctionalities of a system “consumed by academic performance” is concerned, evidenced by how societies with low suicide rates are said to have a status system honouring intrinsic values over achievement. | suicide
-However, Yeung appears to totally disregard formidable underlying mental illnesses, and his contentedness in making Hong Kong’s flawed education system a scapegoat for student suicides is clearly unacceptable. | student
 We think you'd also like
  Hong Kong schools Concern group says leaving cases to schools to investigate is a ‘conflict of interest’ Comments:    A concern group on youth suicide prevention in Hong Kong urged the government on Saturday to set up an independent body to investigate complaints of bullying, criticising authorities for their passive stance. | suicide
 The Citizens’ Alliance for Prevention of Youth Suicide, formed by several groups of parents, teachers and social workers, said a recent alleged bullying incident showed that schools could not resolve such matters themselves. | Suicide
@@ -314,6 +327,12 @@ Findings from the Programme for International Student Assessment (Pisa), release
 Some 15 per cent of students in Hong Kong reported getting verbal threats from other pupils, according to the report. | students
 Citizens’ Alliance for Prevention of Youth Suicide said bullying often went undetected in schools and that reported cases were “only the tip of the iceberg | Suicide
 When any pupil needs help, he or she can go to this group so the problem can be nipped in the bud before it progresses to something more serious like an attempted suicide. | suicide
+We refer to the article by Philip Yeung (“Unruly students in Hong Kong are the product of a failed education system devoid of rich reading”, January 25). | students
+Yeung proposes that “rich reading” may mend misguided angry protesters and avert student suicides, byproducts of an absent moral compass. | student
+Asserting that student suicides could be prevented by “escapist reading”, Yeung ignores deeper psychological, societal, and cultural elements. | student
+It is extremely insensitive of him to use the recent surge in student suicides to advance his premise of promoting “rich reading”, which he not once defines. | student
+We agree with him on the dangers of rote learning, in so far as dysfunctionalities of a system “consumed by academic performance” is concerned, evidenced by how societies with low suicide rates are said to have a status system honouring intrinsic values over achievement. | suicide
+However, Yeung appears to totally disregard formidable underlying mental illnesses, and his contentedness in making Hong Kong’s flawed education system a scapegoat for student suicides is clearly unacceptable. | student
 We think you'd also like
  Comments:    Two studies have shown that public concerns about depression and suicides among students at local schools are justified (“Half of 3,441 Hong Kong students polled show signs of depression”, September 27). | suicides
 One of the studies surveyed 3,441 secondary school pupils and tertiary students in Hong Kong, and found half of them showed signs of depression. | students
@@ -333,7 +352,8 @@ Children are now starting university earlier, thanks to a 2012 shift in the educ
 “Students are entering university at a younger age. | Students
 Ten of the 22 students who committed suicide since the start of the current academic year were in university. | students
 It announced new measures to combat the problem, including improved student counseling in schools, more seminars to alert teachers and parents to warning signs and a committee to research long-term fixes. | student
-But most secondary schools have more than 1,000 students, so their ability to interact one-on-one with children is limited. | students
+But most secondary schools have more than 1,000 students, so their ability to interact one-on-one with children is limited.
+ | students
 Share Topic Suicides in Hong Kong | Suicides
 With Generation Z suicides on the rise, social enterprise | suicides
 Last month, the Hong Kong Jockey Club Centre for Suicide Research and Prevention estimated that the suicide rate for people aged between 15 and 24 was 8.9 per 100,000 in 2016. | Suicide
@@ -392,7 +412,7 @@ The incident was the latest in a string of deaths by young students. | students
 Paul Yip from the University of Hong Kong Center for Suicide Research and Prevention said the incidents could be related to pressure from studies. | Suicide
 Hsu Siu-man, supervisor of the Youth Wellness Centers of the Hong Kong Federation of Youth Groups, said students could be copying suicides from previous cases. | students
 Here is the 24-hour multilingual suicide prevention hotline of The Samaritans: +852 2896 0000 (or email [email protected]). | suicide
-- Contact us at [email protected] EL/AC/RA
+- Contact us at [email protected] EL/AC/RA 
  Student union defends free speech as Education University tries to find pair caught on camera sending ‘congratulations’ to grieving undersecretary Comments:    Hong Kong’s leader headed a chorus of condemnation and outrage on Friday over an “extremely callous” and “cold blooded” message displayed on the Education University campus, taunting a top education official over the suicide of her eldest son. | Student
 The university’s student union, which took down the poster as it was responsible for managing the wall at the Tai Po campus, said it did not support the message, but stopped short of condemning it. | student
 The school is trying to track down the two responsible, but it is not clear if they are students or outsiders, as the wall can be accessed by the public. | students
@@ -573,7 +593,7 @@ A lesson from many rueful parents is that some students may try to keep their st
 Spur-of-the-moment suicides are exceptionally rare, as they are against human nature and instinct for survival. | suicides
 It may take up to 90 days, with multiple phases, from thinking of suicide to actually committing it. | suicide
 Parents must ask themselves: Does suicide really occur without any indication, or is it just that parents fail, or are too busy, to take note of them? | suicide
-To students: Why you’ll miss your schooldays like we do
+To students: Why you’ll miss your schooldays like we do 
   | students
 Suicides in Hong Kong Paul Yip says case studies reveal that prevention requires efforts from all stakeholders to address every related factor, including family relationships and mental health care Comments:    The Committee on Prevention of Student Suicides presented its investigation report to the government this month. | Student
 With the aim of preventing student suicides, it has adopted a public health approach to propose multilayered intervention schemes, to help vulnerable pupils in schools. | student
