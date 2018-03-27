@@ -8,7 +8,7 @@ from googlesearch import search, search_news
 # for url in search("Hong Kong Secondary Student", stop=20):
 #     print(url)
 # print("==============")
-urllist = list(search_news("Hong Kong Student", stop=20))
+urllist = list(search_news("Hong Kong Student", stop=10))
 # for url in urllist:
 #     print(url)
 
@@ -33,10 +33,12 @@ urllist = list(search_news("Hong Kong Student", stop=20))
 #     print("Title: " + result[0])
 #     print("Url: " + result[1])
 
+
+
 from bs4 import BeautifulSoup
 import requests
 import re
-for n, url in enumerate(urllist):
+for n,url in enumerate(urllist):
     print(n, url)
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
