@@ -4,6 +4,9 @@ testurl = "http://www.scmp.com/news/hong-kong/education/article/2137893/voluntee
 # urllist = [testurl]
 from googlesearch import search, search_news
 from textblob import TextBlob
+from textblob import Word
+from textblob.np_extractors import ConllExtractor
+from textblob.sentiments import NaiveBayesAnalyzer
 # for url in search("Hong Kong Secondary Student", stop=20):
 #     print(url)
 # print("==============")
@@ -24,35 +27,48 @@ import re
 #     ]
 #     for n in wordlist:
 #         print(' '.join(text.split()[n - 8:n + 8]))
-    # print(text)
+# print(text)
 #
 with open("test.txt") as fp:
     soup = BeautifulSoup(fp, 'html.parser')
     # print(*map(BeautifulSoup.get_text,soup.find_all('p')))
-    testtext = ' '.join(map(BeautifulSoup.get_text,soup.find_all('p')))
-    print(testtext)
+    testtext = ' '.join(map(BeautifulSoup.get_text, soup.find_all('p')))
+print(testtext)
+
+tb = TextBlob(testtext)
+print('subjectivity', tb.sentiment.subjectivity)
+print('polarity', tb.sentiment.polarity)
+print('individual words', tb.sentiment_assessments)
+# print('list of noun', tb.noun_phrases)
+for sent in tb.sentences:
+    print(sent)
+tb2 = TextBlob(testtext, analyzer=NaiveBayesAnalyzer(), np_extractor=ConllExtractor())
+print(tb2.sentiment.subjectivity_assessments)
+print(tb2.noun_phrases)
+
+# for sent in tb.sentences:
+
+print(Word('Student').lemmatize())
+print(Word('student').lemmatize())
+print(Word('Students').lemmatize())
+print(Word('students').lemmatize())
 
 
-from wordcloud import WordCloud
-# text = open('test.txt').read()
-text = testtext
-# %matplotlib tk
-import matplotlib.pyplot as plt
-import cv2
 
-wordcloud = WordCloud().generate(text)
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
-plt.show()
-cv2.imshow('wordcloud', wordcloud.to_array())
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
+# from wordcloud import WordCloud
+# import matplotlib.pyplot as plt
+# import cv2
+# wordcloud = WordCloud().generate(text)
+# plt.imshow(wordcloud, interpolation='bilinear')
+# plt.axis("off")
+# plt.show()
+# cv2.imshow('wordcloud', wordcloud.to_array())
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 # lower max_font_size
 # wordcloud = WordCloud(width=1920, height=1080).generate(text)
 # plt.figure()
 # plt.imshow(wordcloud, interpolation="bilinear")
 # plt.axis("off")
 # plt.show()
-
-# for i,n in enumerate(urllist):
-#     print(i)

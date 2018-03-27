@@ -26,7 +26,7 @@ wordcloud = WordCloud(max_font_size=40).generate(text)
 plt.figure()
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
-
+type(wordcloud.to_image())
 
 plt.show()
 
