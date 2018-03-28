@@ -3,7 +3,8 @@ wordList = ('student, suicide')
 from googlesearch import search_news
 from bs4 import BeautifulSoup
 import requests
-import spacy
+# import spacy
+import en_core_web_sm
 from textblob import TextBlob
 from textblob.np_extractors import ConllExtractor
 from textblob.sentiments import NaiveBayesAnalyzer
@@ -44,7 +45,8 @@ for tb2s in tb2.sentences:
         print(tb2s)
         print('pos:', tb2s.sentiment.p_pos, 'neg:', tb2s.sentiment.p_neg)
 
-nlp = spacy.load('en')
+# nlp = spacy.load('en')
+nlp = en_core_web_sm.load()
 doc = nlp(pageContent)
 
 with open("ShortLines.txt", 'w+', encoding='utf-8') as fp:

@@ -1,9 +1,9 @@
-import simplejson as json
+import json
 import codecs
 from nested_lookup import nested_lookup as nl
 import requests
 
-hashtagToSearch = 'TGIF'
+hashtagToSearch = 'HKDSE'
 searchPage = 5
 
 

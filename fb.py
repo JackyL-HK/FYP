@@ -2,6 +2,8 @@ import time
 import facebook
 startTime = time.time()
 
+# Permanent Access Token - 2018FYP
+# Use with care
 token = "---"
 graph = facebook.GraphAPI(access_token=token, version=2.7)
 id_list = [
