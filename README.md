@@ -14,4 +14,5 @@ the damn FYP
    - [ ] Included a video link if your work is video, animation, documentary, Experiment video, single channel video etc.
    - [ ] Included documentation if your work is an installation, game etc.
 3. Apr 30 - May 7 : GT Exhibition Set Up
-4. May 7 - May 18 : GT Exhibition & Oral Presentation
+4. May 7 - May 18 : GT Exhibition
+5. May 11 : Oral Presentation
