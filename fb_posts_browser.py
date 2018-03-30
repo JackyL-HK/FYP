@@ -6,21 +6,30 @@ startTime = time.time()
 # https://developers.facebook.com/tools/explorer/
 # /schools.secrets/
 # 179264152235008
-token = "EAACEdEose0cBAFY7ZA49pyDespHJGsjZBXzMpcZCHfHQnxGIKM2pqyEWjg8DtdZACqP4pxx2HCZCUyZAWO1dVIVFZCREHAqCZBTjmgDtKpCVDn4ZATJiGvAzLs9ZCTk5slabj3Fv6ZBKZCJgBGebfnTIsXYYj5mMlIqNbXSZArWnJZCTrZAJfSe0iYZAdtgDBzT54OBgVKgU9nd2Yv6kAFVsC4ueZCmZA1CqY7RgsNPh8ZD"
+token = "EAACEdEose0cBAMSVvybfgJ7jnyhKDYaWmob1UWh0RfytGsBXDJ8smjTyqOl7PotU4zkjyYu9zepki4MCUZAZANVn0I0wliHsh7JEX3ZBAvOKZCyQpSfhFg24LZA3mRPxsGtRDB8wF7DTMqvtx4YJ1WLyko97zDQJAoaufFcaBsgCTDCmRv1kblTLis5zNk2dzgqt0SOg1qWLJNISenV6j"
 graph = facebook.GraphAPI(access_token=token, version=2.12)
 id_list = [179264152235008]
 comments_list = []
-##################################
-# for a, idno in enumerate(id_list):
-page = graph.get_object(
-    id=str(idno), fields='name,id,posts.limit(10){name,id,created_time,message,full_picture,permalink_url,shares,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry),comments.limit(1000){id,message,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry)}}')
-# print(page['name'], '|', page['id'])
-JSON(page)
-with open('fb_parsing.json','w',encoding='utf-8') as fp:
-    json.dump(page,fp)
-##################################
+
+for a, idno in enumerate(id_list):
+    page = graph.get_object(
+        id=str(idno), fields='name,id,posts.limit(100){name,id,created_time,message,full_picture,permalink_url,shares,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry),comments.limit(1000){id,message,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry)}}')
+        # posts.limit(1000) - AT MOST
+        # comments.limit(150) - AT MOST
+        # name,id,posts.limit(1000){name,id,created_time,message,full_picture,permalink_url,shares,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry)}
+        # name,id,posts.limit(100){comments.limit(1000){id,message,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry)}}
+        # name,id,posts.limit(100){name,id,created_time,message,full_picture,permalink_url,shares,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry),comments.limit(1000){id,message,reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry)}}
+        # print("posts+comments(100x10)", 12.228018045425415*10) # 122.28018045425415
+        # print("posts(1000)+comments(100x10)", 16.739154815673828+10.867603063583374*10) # 125.41518545150757
+
+    # print(page['name'], '|', page['id'])
+    # JSON(page)
+    with open('fb_parsing.json','w',encoding='utf-8') as fp:
+        json.dump(page,fp)
+
     posts_id = [page['posts']['data'][n]['id'] for n in range(50)]
     posts_id
+    len(page['posts']['data'])
     posts = graph.get_objects(
         posts_id,
         fields='name,created_time,message,link,picture,shares,comments.limit(10), reactions.type(LIKE).limit(0).summary(total_count).as(r_like),reactions.type(LOVE).limit(0).summary(total_count).as(r_love),reactions.type(WOW).limit(0).summary(total_count).as(r_wow),reactions.type(HAHA).limit(0).summary(total_count).as(r_haha),reactions.type(SAD).limit(0).summary(total_count).as(r_sad),reactions.type(ANGRY).limit(0).summary(total_count).as(r_angry))'
