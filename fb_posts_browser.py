@@ -3,6 +3,8 @@ import facebook
 import json
 from IPython.display import JSON
 import requests
+from snownlp import SnowNLP
+import re
 startTime = time.time()
 # https://developers.facebook.com/tools/explorer/
 # /schools.secrets/
@@ -22,7 +24,7 @@ for _ in range(9):
     for n in next_json['data']:
         page['posts']['data'].append(n)
 
-print(len(page['posts']['data']))
+JSON((page['posts']['data'][0]))
 
 print("Time used:", (time.time() - startTime))
     # posts.limit(1000) - AT MOST
@@ -35,55 +37,70 @@ with open('fb_parsing.json', 'w+', encoding='utf-8') as fp:
 with open('fb_parsing.json', 'r', encoding='utf-8') as fp:
     page = json.load(fp)
 
-    for b, n in enumerate(posts_id):
-        print('\n###{}'.format(b))
-        if 'name' in posts[n]:
-            print('name', posts[n]['name'])
-        if 'message' in posts[n]:
-            print('message', posts[n]['message'])
-        print('vvvvIDvvvv')
-        print(posts[n]['id'])
-        print('created_time', posts[n]['created_time'])
-        if 'link' in posts[n]:
-            print('link', posts[n]['link'])
-        if 'picture' in posts[n]:
-            print('picture', posts[n]['picture'])
-        if 'share' in posts[n]:
-            print('shares', posts[n]['shares']['count'])
-        sum = posts[n]['r_angry']['summary']['total_count'] + posts[n]['r_haha']['summary']['total_count'] + posts[n]['r_like']['summary']['total_count'] + \
-            posts[n]['r_love']['summary']['total_count'] + \
-            posts[n]['r_sad']['summary']['total_count'] + \
-            posts[n]['r_wow']['summary']['total_count']
-        index = posts[n]['r_angry']['summary']['total_count'] * (
-            -1
-        ) / sum + posts[n]['r_haha']['summary']['total_count'] * (
-            1) / sum + posts[n]['r_like']['summary']['total_count'] * (
-                0
-            ) / sum + posts[n]['r_love']['summary']['total_count'] * (
-                1
-            ) / sum + posts[n]['r_sad']['summary']['total_count'] * (
-                -1
-            ) / sum + posts[n]['r_wow']['summary']['total_count'] * (
-                0) / sum
+ss_test=[]
+ss_sent=[]
+chi_list = ['想死','想喊','壓力']
+for msg in page['posts']['data']:
+    if 'message' in msg:
+        ss_test.append(msg['message']) if any(x in msg['message'] for x in chi_list) else ''
+ss_test = ' '.join(ss_test)
+snlp = SnowNLP(ss_test)
+for sent in snlp.sentences:
+    ss_sent.append(re.sub(r'\[.*\]', ' ', sent) if any(x in sent for x in chi_list) else '')
+for sent in ss_sent:
+    if sent:
+        s=SnowNLP(sent)
+        print(sent,' | ',s.sentiments)
 
-        print(index)
-        print('^^^^INDEX^^^^')
-        print('angry',
-              posts[n]['r_angry']['summary']['total_count'])  # -1
-        print('haha',
-              posts[n]['r_haha']['summary']['total_count'])  # 1
-        print('like',
-              posts[n]['r_like']['summary']['total_count'])  # 0
-        print('love',
-              posts[n]['r_love']['summary']['total_count'])  # 1
-        print('sad', posts[n]['r_sad']['summary']['total_count'])  # -1
-        print('wow', posts[n]['r_wow']['summary']['total_count'])  # 0
-        if 'comments' in posts[n]:
-            # print([posts[n]['comments']['data'][m]['message'] for m in range(len(posts[n]['comments']['data']))])
-            comments_list.extend([
-                posts[n]['comments']['data'][m]['message']
-                for m in range(len(posts[n]['comments']['data']))
-            ])
+for b, n in enumerate(posts_id):
+    print('\n###{}'.format(b))
+    if 'name' in posts[n]:
+        print('name', posts[n]['name'])
+    if 'message' in posts[n]:
+        print('message', posts[n]['message'])
+    print('vvvvIDvvvv')
+    print(posts[n]['id'])
+    print('created_time', posts[n]['created_time'])
+    if 'link' in posts[n]:
+        print('link', posts[n]['link'])
+    if 'picture' in posts[n]:
+        print('picture', posts[n]['picture'])
+    if 'share' in posts[n]:
+        print('shares', posts[n]['shares']['count'])
+    sum = posts[n]['r_angry']['summary']['total_count'] + posts[n]['r_haha']['summary']['total_count'] + posts[n]['r_like']['summary']['total_count'] + \
+        posts[n]['r_love']['summary']['total_count'] + \
+        posts[n]['r_sad']['summary']['total_count'] + \
+        posts[n]['r_wow']['summary']['total_count']
+    index = posts[n]['r_angry']['summary']['total_count'] * (
+        -1
+    ) / sum + posts[n]['r_haha']['summary']['total_count'] * (
+        1) / sum + posts[n]['r_like']['summary']['total_count'] * (
+            0
+        ) / sum + posts[n]['r_love']['summary']['total_count'] * (
+            1
+        ) / sum + posts[n]['r_sad']['summary']['total_count'] * (
+            -1
+        ) / sum + posts[n]['r_wow']['summary']['total_count'] * (
+            0) / sum
+
+    print(index)
+    print('^^^^INDEX^^^^')
+    print('angry',
+          posts[n]['r_angry']['summary']['total_count'])  # -1
+    print('haha',
+          posts[n]['r_haha']['summary']['total_count'])  # 1
+    print('like',
+          posts[n]['r_like']['summary']['total_count'])  # 0
+    print('love',
+          posts[n]['r_love']['summary']['total_count'])  # 1
+    print('sad', posts[n]['r_sad']['summary']['total_count'])  # -1
+    print('wow', posts[n]['r_wow']['summary']['total_count'])  # 0
+    if 'comments' in posts[n]:
+        # print([posts[n]['comments']['data'][m]['message'] for m in range(len(posts[n]['comments']['data']))])
+        comments_list.extend([
+            posts[n]['comments']['data'][m]['message']
+            for m in range(len(posts[n]['comments']['data']))
+        ])
 
 print("Time used:", (time.time() - startTime))
 
