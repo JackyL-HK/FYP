@@ -4,13 +4,24 @@ from pyglet.window import mouse
 from time import time
 from movetext import MoveText
 from random import randrange
+import emoji
 
+font.add_file('font\DFHsiuW3.ttc')
 
 def loadLines(filepath):
     # import csv
+    # with open('fbContent.txt', 'r', encoding='utf-8') as fp:
+    #     scr = []
+    #     for line in fp.read().split('\n'):
+    #         scr.append(line)
+    #     return scr
     with open('fbContent.txt', 'r', encoding='utf-8') as fp:
         scr = []
         for line in fp.read().split('\n'):
+            # if any(char in emoji.UNICODE_EMOJI for char in line):
+            for char in line:
+                if char in emoji.UNICODE_EMOJI:
+                    line = line.replace(char,'')
             scr.append(line)
         return scr
 
@@ -34,8 +45,8 @@ def createLine():
         while abs(y-t.y) < 20:
             y = randrange(0, window.height)
 
-    return MoveText(text=textlines[randrange(0, len(textlines))], font_size=15, x=randrange(
-        0, window.width/3), y=y, color=(255, 255, 255, 255))
+    return MoveText(text=textlines[randrange(0, len(textlines))], font_size=30, x=randrange(
+        0, window.width/3), y=y, color=(255, 255, 255, 255),font_name='DFPHsiuW3-B5')
 
 
 createTime = time()
@@ -73,5 +84,5 @@ def update(dt):
             textlist.pop(i)
 
 
-pyglet.clock.schedule_interval(update, 1/30.0)
+pyglet.clock.schedule_interval(update, 1/120.0)
 pyglet.app.run()
