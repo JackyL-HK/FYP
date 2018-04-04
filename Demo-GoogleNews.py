@@ -28,18 +28,18 @@ with open('pageContent.txt', 'w+', encoding='utf-8') as fp:
 with open("pageContent.txt", 'r', encoding='utf-8') as fp:
     pageContent = fp.read()
 
-with open("NegPolarity-TextBlob-Default.csv", 'w+', encoding='utf-8') as fp:
-    writer = csv.writer(fp, delimiter=',')
-    data = [("string", "polarity")]
-    tb = TextBlob(pageContent)
-    for tbs in tb.sentences:
-        if not re.search(r'{}'.format(skipList), str(tbs), re.IGNORECASE):
-            polarity = tbs.sentiment.polarity
-            if polarity < 0:
-                row = str(tbs), polarity
-                data.append(row)
-                print(row)
-    writer.writerows(data)
+    with open("NegPolarity-TextBlob-Default.csv", 'w+', encoding='utf-8') as fp:
+        writer = csv.writer(fp, delimiter=',')
+        data = [("string", "polarity")]
+        tb = TextBlob(pageContent)
+        for tbs in tb.sentences:
+            if not re.search(r'{}'.format(skipList), str(tbs), re.IGNORECASE):
+                polarity = tbs.sentiment.polarity
+                if polarity < 0:
+                    row = str(tbs), polarity
+                    data.append(row)
+                    print(row)
+        writer.writerows(data)
 
 
 # tb2 = TextBlob(pageContent, analyzer=NaiveBayesAnalyzer(),

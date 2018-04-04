@@ -69,6 +69,14 @@ for sent in ss_sent:
         s = SnowNLP(sent)
         print(sent, ' | ', s.sentiments)
 
+with open("fbContent.txt", 'w+', encoding='utf-8') as fp:
+    fpwrite=[]
+    for sent in ss_sent:
+        if sent:
+            fpwrite.append(sent)
+    fp.write('\n'.join(fpwrite))
+            
+
 # page['name']
 # page['id']
 # page['posts']
