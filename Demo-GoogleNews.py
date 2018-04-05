@@ -28,18 +28,18 @@ with open('pageContent.txt', 'w+', encoding='utf-8') as fp:
 with open("pageContent.txt", 'r', encoding='utf-8') as fp:
     pageContent = fp.read()
 
-    with open("NegPolarity-TextBlob-Default.csv", 'w+', encoding='utf-8') as fp:
-        writer = csv.writer(fp, delimiter=',')
-        data = [("string", "polarity")]
-        tb = TextBlob(pageContent)
-        for tbs in tb.sentences:
-            if not re.search(r'{}'.format(skipList), str(tbs), re.IGNORECASE):
-                polarity = tbs.sentiment.polarity
-                if polarity < 0:
-                    row = str(tbs), polarity
-                    data.append(row)
-                    print(row)
-        writer.writerows(data)
+with open("NegPolarity-TextBlob-Default.csv", 'w+', encoding='utf-8') as fp:
+    writer = csv.writer(fp, delimiter=',')
+    data = [("string", "polarity")]
+    tb = TextBlob(pageContent)
+    for tbs in tb.sentences:
+        if not re.search(r'{}'.format(skipList), str(tbs), re.IGNORECASE):
+            polarity = tbs.sentiment.polarity
+            if polarity < 0:
+                row = str(tbs), polarity
+                data.append(row)
+                print(row)
+    writer.writerows(data)
 
 
 # tb2 = TextBlob(pageContent, analyzer=NaiveBayesAnalyzer(),
@@ -68,7 +68,9 @@ with open("LongLines.txt", 'w+', encoding='utf-8') as fp:
         if not re.search(r'{}'.format(skipList), str(sentence), re.IGNORECASE):
             for word in sentence:
                 if word.lemma_ in wordList:
-                    printText = str(sentence) + ' | ' + str(word)
+                    # printText = str(sentence).strip() + ' | ' + str(word)
+                    printText = str(sentence).strip()
+                    printText = re.sub(r'(‘|’|“|”)', "'", printText)
                     fp.write('\n'+printText)
                     print(printText)
                     break
