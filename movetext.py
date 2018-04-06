@@ -4,10 +4,14 @@ from noise import snoise2
 from random import randrange
 
 font.add_file(r'font\DFHsiuW3.ttc')
+font.add_file(r'font\DFErW3.ttc')
+font.add_file(r'font\MLingWaiFHK-Light.otf')
 font.add_file(r'font\AdobeFanHeitiStdB.otf')
+font.add_file(r'font\AdobeFangsongStdR.otf')
 font.add_file(r'font\NotoSansCJKtc-Bold.otf')
 font.add_file(r'font\NotoSansCJKtc-Black.otf')
 font.add_file(r'font\NotoSansCJKtc-Light.otf')
+font.add_file(r'font\NotoSansCJKtc-Thin.otf')
 
 
 def map_range(OldValue, OldMin, OldMax, NewMin, NewMax):
@@ -22,6 +26,7 @@ class MoveText(text.Label):
 
         self.color = (255, 255, 255, 0) if not color else color
         self.multiline = True if width else False
+        font_size *= 1
 
         self.alpha = 1
         self.scale = 0
@@ -39,7 +44,7 @@ class MoveText(text.Label):
                       self.color[2], int(map_range(snoise2(self.index, self.n), -1, 1, 0.5, 1) * self.scale))
         self.n += 0.001
         if self.align == 'left':
-            self.x -= 1
+            self.x += 0
         elif self.align == 'right':
             self.x += 1
 
