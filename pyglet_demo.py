@@ -5,15 +5,24 @@ from movetext import MoveText, map_range
 from random import choice, uniform, randint
 import emoji
 import csv
+import pathlib
+
+currentFrame = 0
+pgmStartTime = time()
+pathlib.Path(r'screenshots\{}'.format(pgmStartTime)
+             ).mkdir(parents=True, exist_ok=True)
 
 # display = pyglet.window.get_platform().get_default_display()
 # screens = display.get_screens()
 # window = pyglet.window.Window(width=1920, height=640, vsync=True,fullscreen=True,screen=screens[0])
 window = pyglet.window.Window(
     width=1920, height=548, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
+window.set_location(0, (1080-window.height)//2)
 window.set_caption('Certificate of Death v0.1')
 fps_display = pyglet.window.FPSDisplay(window)
-batch_text = graphics.Batch()
+# batch_text = graphics.Batch()
+chi_batch_text = graphics.Batch()
+eng_batch_text = graphics.Batch()
 batch_quad = graphics.Batch()
 
 
@@ -55,16 +64,21 @@ def create_quad_vertex_list(x, y, width, height):
 def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
     text = choice(tlist)
     if lang == 'chi':
-        font_size = 20 if len(text) < 15 else 15
         if any(t == '攰' for t in text):
-            font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
+            font_name = choice(
+                ['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
         else:
-            font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin', 'MLingWaiFHK-Light', 'DFPHsiuW3-B5', 'DFPErW3-B5'])
+            font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin',
+                                'MLingWaiFHK-Light', 'DFPHsiuW3-B5', 'DFPErW3-B5'])
+        font_size = 20 if len(text) < 15 or font_name not in [
+                              'Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'] else 15
         color = (255, 255, 255, 0)
+        batch_text=chi_batch_text
     elif lang == 'eng':
         font_size = 14
         font_name = 'Noto Sans CJK TC Light'
         color = (0, 0, 0, 0)
+        batch_text=eng_batch_text
     x = uniform(0, window.width /
                 2) if align == 'left' else uniform(window.width/2, window.width*3/4)
     y = uniform(0, window.height)
@@ -133,12 +147,18 @@ def on_draw():
     window.clear()
     quad.draw(pyglet.gl.GL_QUADS)
     # batch_quad.draw()
-    batch_text.draw()
-    fps_display.draw()
+    # batch_text.draw()
+    eng_batch_text.draw()
+    chi_batch_text.draw()
+    # fps_display.draw()
 
 
 @window.event
 def update(dt):
+    global currentFrame
+    pyglet.image.get_buffer_manager().get_color_buffer().save(r'screenshots\{}\screenshot{}.png'.format(pgmStartTime,str(currentFrame).zfill(5)))
+    currentFrame += 1
+
     global createTime
     mt_update(chi_mt_list, chi_list)
     mt_update(eng_mt_list, eng_list)
