@@ -5,12 +5,14 @@ from googlesearch import search_news
 from bs4 import BeautifulSoup
 import requests
 import re
-# import spacy
+from spacy import displacy
 import en_core_web_sm
 from textblob import TextBlob
 # from textblob.np_extractors import ConllExtractor
 # from textblob.sentiments import NaiveBayesAnalyzer
 import csv
+from pathlib import Path
+
 print('Fetching news url from Google News...')
 urlList = list(search_news("Hong Kong, Student, Suicide", stop=50,
                            tld='com.hk', tbs='ctr:countryHK', extra_params={'cr': 'countryHK'}))
@@ -74,3 +76,12 @@ with open("LongLines.txt", 'w+', encoding='utf-8') as fp:
                     fp.write('\n'+printText)
                     print(printText)
                     break
+
+demo = nlp('Since 2013, the second year of the DSE, about 71 students have committed suicide.')
+demo.user_data['title'] = 'Demo'
+svg = displacy.render(demo, style='dep', options={'distance':100, 'compact':True})
+with open(r'sentence.svg', mode='w', encoding='utf-8') as fp:
+    fp.write(svg)
+# Path('/displacy/sentence.svg').mkdir(parents=True, exist_ok=True)
+# output_path = Path('/displacy/sentence.svg')
+# output_path.open('w', encoding='utf-8').write(svg)
