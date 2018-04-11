@@ -14,7 +14,7 @@ import csv
 from pathlib import Path
 
 print('Fetching news url from Google News...')
-urlList = list(search_news("Hong Kong, Student, Suicide", stop=50,
+urlList = list(search_news("Hong Kong, Student, Suicide", stop=5,
                            tld='com.hk', tbs='ctr:countryHK', extra_params={'cr': 'countryHK'}))
 with open('news_url.txt', 'w+', encoding='utf-8') as fp:
     fp.write('\n'.join(urlList))
@@ -57,13 +57,13 @@ with open("NegPolarity-TextBlob-Default.csv", 'w+', encoding='utf-8') as fp:
 nlp = en_core_web_sm.load()
 doc = nlp(pageContent)
 
-with open("ShortLines.txt", 'w+', encoding='utf-8') as fp:
-    for word in doc:
-        if word.lemma_ in wordList:
-            subtree_span = doc[word.left_edge.i: word.right_edge.i + 1]
-            printText = subtree_span.text + ' | ' + subtree_span.root.text
-            fp.write('\n'+printText)
-            print(printText)
+# with open("ShortLines.txt", 'w+', encoding='utf-8') as fp:
+#     for word in doc:
+#         if word.lemma_ in wordList:
+#             subtree_span = doc[word.left_edge.i: word.right_edge.i + 1]
+#             printText = subtree_span.text + ' | ' + subtree_span.root.text
+#             fp.write('\n'+printText)
+#             print(printText)
 
 with open("LongLines.txt", 'w+', encoding='utf-8') as fp:
     for sentence in doc.sents:
@@ -77,11 +77,11 @@ with open("LongLines.txt", 'w+', encoding='utf-8') as fp:
                     print(printText)
                     break
 
-demo = nlp('Since 2013, the second year of the DSE, about 71 students have committed suicide.')
-demo.user_data['title'] = 'Demo'
-svg = displacy.render(demo, style='dep', options={'distance':100, 'compact':True})
-with open(r'sentence.svg', mode='w', encoding='utf-8') as fp:
-    fp.write(svg)
+# demo = nlp('Since 2013, the second year of the DSE, about 71 students have committed suicide.')
+# demo.user_data['title'] = 'Demo'
+# svg = displacy.render(demo, style='dep', options={'distance':100, 'compact':True})
+# with open(r'sentence.svg', mode='w', encoding='utf-8') as fp:
+#     fp.write(svg)
 # Path('/displacy/sentence.svg').mkdir(parents=True, exist_ok=True)
 # output_path = Path('/displacy/sentence.svg')
 # output_path.open('w', encoding='utf-8').write(svg)

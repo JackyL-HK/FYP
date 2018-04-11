@@ -19,7 +19,7 @@ def end():
 # https://developers.facebook.com/tools/explorer/
 # /schools.secrets/
 # 179264152235008
-token = "EAACEdEose0cBAEybBftUQY1VG0UDvtvDubFE8RR7kU6UcVOfOl56ZC5plicXHmbVejEusoVgW07b1xGfY7bo1BkHtt41Rb90TM3ow7SHZBbw3Hji62K7FQYFtENiLHTEpRvdUfZCZCtwZBpkiOUZCcONn9mjbcC5BmyBiwoYXFxCgCqSpTtd1ty6sPlDg3brLThEeeloJej25O02c31wCS"
+token = "EAACEdEose0cBADxJPwf6I38dEoWxrjUnP353lMnzUaBrTeU9e30VYJIYfSrBoogwDGyaG653fZBI0jFxojMXUk177vHezCPiKptCvYNpBtjzaDn1ZB8TzoX184Sq97Sjb1n8LZAfZCcfMZB7Tg4m7qYuqZA2mOQyuFvZCfO7ozn1i6p5XN6DWdS40BLUfi75y30vxKJ1iSlhT7oVFj9sZCfZB"
 graph = facebook.GraphAPI(access_token=token, version=2.12)
 id_list = [179264152235008]
 comments_list = []
@@ -75,7 +75,7 @@ with open("fbContent.txt", 'w+', encoding='utf-8') as fp:
         if sent:
             fpwrite.append(sent)
     fp.write('\n'.join(fpwrite))
-            
+
 
 # page['name']
 # page['id']
