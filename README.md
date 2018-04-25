@@ -2,12 +2,12 @@
 the damn FYP
 
 1. Apr 6 : Submission of Final Draft
-    - [ ] A video link of your rough cut
+    - [x] A video link of your rough cut
      - If your work is video, animation, documentary, experiment video etc
-    - [ ] A documentation of your work
+    - [x] A documentation of your work
      - If your work is installation, game, photography, sound art, code-based, network art,
     - [ ] Artist statement
-    - [ ] The process of the work
+    - [x] The process of the work
     - [X] Exhibitors: you have to confirm your exhibition space for your final presentation
           - 6/F, Wall C, 4.17 x 2.4m
 2. May 4 : Submission of Final Work and Theoretical Text
