@@ -49,14 +49,31 @@ class MoveText(text.Label):
             self.x += 1
 
     def fade(self):
-        if self.fade_mode == 1:
-            self.scale += 5
-            if self.scale >= 255:
-                self.time = time()
-                self.fade_mode = 0
-        if self.fade_mode == 0 and time()-self.time > self.hold_time:
-            self.fade_mode = -1
-        if self.fade_mode == -1:
-            self.scale -= 5
-            if self.scale <= 0:
-                self.end = True
+        if self.align == 'left': # chinese
+            if self.fade_mode == 1:
+                self.scale += 5
+                self.font_size += 0.0
+                if self.scale >= 255:
+                    self.time = time()
+                    self.fade_mode = 0
+            if self.fade_mode == 0:
+                self.font_size += 0.0
+            if self.fade_mode == 0 and time()-self.time > self.hold_time:
+                self.fade_mode = -1
+            if self.fade_mode == -1:
+                self.scale -= 5
+                self.font_size += 0.0
+                if self.scale <= 0:
+                    self.end = True
+        else: # english
+            if self.fade_mode == 1:
+                self.scale += 5
+                if self.scale >= 255:
+                    self.time = time()
+                    self.fade_mode = 0
+            if self.fade_mode == 0 and time()-self.time > self.hold_time:
+                self.fade_mode = -1
+            if self.fade_mode == -1:
+                self.scale -= 5
+                if self.scale <= 0:
+                    self.end = True
