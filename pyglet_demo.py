@@ -26,7 +26,9 @@ eng_batch_text = graphics.Batch()
 batch_quad = graphics.Batch()
 batch_cert = graphics.Batch()
 
-cert_img = image.load('dse_cert_temp_resize.jpg')
+cert_img = []
+for i in range(1, 7):
+    cert_img.append(image.load('cert00{}.jpg'.format(i)))
 
 
 def loadLinesFromTxt(filepath):
@@ -96,10 +98,10 @@ def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
     # return MoveText(text=choice(tlist), font_size=20, x=uniform(0, window.width/3), y=y, font_name='Noto Sans CJK TC Black')
 
 
-def mt_update(mtlist, tlist):
+def mt_update(mtlist, dt):
     for mt in mtlist:
         if not mt.end:
-            mt.update()
+            mt.update(dt)
         else:
             mtlist.remove(mt)
     # print(len(mtlist))
@@ -126,17 +128,21 @@ quad = pyglet.graphics.vertex_list(4,
 students = loadStudentsList('students_list.csv')
 
 cert_sprites = []
-x_num, y_num = 4, 2
-for i in range(20):
-    for j in range(4):
+# x_num, y_num = 20, 4 # for A4 portrait
+# x_num, y_num = 10, 4 # for A3 landscape
+x_num, y_num = 10, 2  # for A2 portrait
+# x_num, y_num = 5, 2 # for A1 landscape
+# x_num, y_num = 5, 1 # for A0 portrait
+for i in range(x_num):
+    for j in range(y_num):
         # wh = int(randint(0, 255))
         wh = int(map_range(int(students[i+j*x_num]['age']), int(min(row['age']
                                                                     for row in students)), int(max(row['age'] for row in students)), 0, 255))
         # batch_quad.add(4, pyglet.gl.GL_QUADS, None, ('v2i', create_quad_vertex_list(i*(window.width//x_num), j*(window.height//y_num),
         #                                                                             window.width//x_num, window.height//y_num)), ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
         cert_sprites.append(sprite.Sprite(
-            cert_img, i*(window.width//x_num), j*(window.height//y_num), batch=batch_cert))
-        text.Label(text=str(students[i+j*x_num]['\ufeffname']), font_name='Noto Sans CJK TC Bold', color=(0,0,0, 130),
+            choice(cert_img), i*(window.width//x_num), j*(window.height//y_num), batch=batch_cert))
+        text.Label(text=str(students[i+j*x_num]['\ufeffname']), font_name='Noto Sans CJK TC Bold', color=(0, 0, 0, 130),
                    font_size=15, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*16)*13, y=j*(window.height//y_num)+window.height//(y_num*64)*36, batch=batch_quad)
         # text.Label(text=str(students[i+j*x_num]['age']), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
         #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(window.height//y_num)+window.height//(y_num*4)*3, batch=batch_quad)
@@ -156,12 +162,12 @@ def on_key_press(symbol, modifiers):
 @window.event
 def on_draw():
     window.clear()
-    # quad.draw(pyglet.gl.GL_QUADS)
+    quad.draw(pyglet.gl.GL_QUADS)
     batch_cert.draw()
-    batch_quad.draw()
+    # batch_quad.draw()
     eng_batch_text.draw()
     chi_batch_text.draw()
-    # fps_display.draw()
+    fps_display.draw()
 
 
 @window.event
@@ -172,8 +178,8 @@ def update(dt):
     # currentFrame += 1
 
     global createTime
-    mt_update(chi_mt_list, chi_list)
-    mt_update(eng_mt_list, eng_list)
+    mt_update(chi_mt_list, dt)
+    mt_update(eng_mt_list, dt)
     # if time() - createTime > randint(3, 8):
     if time() - createTime > 1 and len(chi_mt_list)+len(eng_mt_list) < 15:
         if choice([True, False]):

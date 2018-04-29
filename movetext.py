@@ -38,7 +38,7 @@ class MoveText(text.Label):
         self.end = False
         self.align = align
 
-    def update(self):
+    def update(self,dt):
         self.fade()
         self.color = (self.color[0], self.color[1],
                       self.color[2], int(map_range(snoise2(self.index, self.n), -1, 1, 0.5, 1) * self.scale))
