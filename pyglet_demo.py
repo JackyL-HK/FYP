@@ -5,17 +5,19 @@ from movetext import MoveText, map_range
 from random import choice, uniform, randrange
 import emoji
 import csv
+import os.path
 # import pathlib
 
 currentFrame = 0
 pgmStartTime = time()
 item=0
+preset=0
 # pathlib.Path(r'screenshots\{}'.format(pgmStartTime)
-#              ).mkdir(parents=True, exist_ok=True)
+             # ).mkdir(parents=True, exist_ok=True)
 
 display = pyglet.window.get_platform().get_default_display()
 screens = display.get_screens()
-window = pyglet.window.Window(width=1920, height=1080, vsync=True,fullscreen=True,screen=screens[1])
+window = pyglet.window.Window(width=1920, height=1080, vsync=True,fullscreen=True,screen=screens[0])
 # window = pyglet.window.Window(
 #     width=1920, height=548, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
 # window.set_location(0, (1080-window.height)//2)
@@ -73,7 +75,7 @@ def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
     if lang == 'chi':
         font_name = 'Noto Sans CJK TC Bold'
         # font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
-        font_size = 15
+        font_size = 25 # 15
         # if any(t == '攰' for t in text):
         #     font_name = choice(
         #         ['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
@@ -87,10 +89,13 @@ def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
         x = uniform(0, window.width / 2)
         y = randrange(0, 548, 30)
     elif lang == 'eng':
-        font_size = 14  # 14
-        font_name = 'Noto Sans CJK TC Light'
-        # color = (0, 0, 0, 0)
-        color = (255, 255, 255, 0)
+        font_size = 24  # 14
+        # font_name = 'Noto Sans CJK TC Light'
+        font_name = 'Noto Sans CJK TC Black'
+        if preset == 0:
+            color = (255, 255, 255, 0)
+        elif preset == 1:
+            color = (0, 0, 0, 0)
         batch_text = eng_batch_text
         x = uniform(window.width/2, window.width*3/4)
         y = randrange(0, 548, 28)
@@ -155,24 +160,27 @@ for i in range(x_num):
         #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(window.height//y_num)+window.height//(y_num*4)*1, batch=batch_quad, dpi=100)
 
 # item_count = text.Label(text=item, font_name='Noto Sans CJK TC Thin', color=(255,255,255,255), font_size=15, x=10,y=1000)
-
+test_name = text.Label(text=str(students[1]['\ufeffname']), font_name='Noto Sans CJK TC Bold', color=(255,255,255,255),
+           font_size=20, anchor_x='center', anchor_y='center', x=920,y=210)
 @window.event
 def on_key_press(symbol, modifiers):
     if symbol == pyglet.window.key.ENTER:
         pyglet.image.get_buffer_manager().get_color_buffer().save(
             'screenshot{}.png'.format(time()))
-
+0.
 
 @window.event
 def on_draw():
     window.clear()
-    # quad.draw(pyglet.gl.GL_QUADS)
+    if preset == 1:
+        quad.draw(pyglet.gl.GL_QUADS)
     # batch_cert.draw()
-    # batch_quad.draw()
+    test_name.draw()
+    # # batch_quad.draw()
     eng_batch_text.draw()
     chi_batch_text.draw()
     fps_display.draw()
-    # item_count.draw()
+     # # item_count.draw()
 
 
 @window.event

@@ -2,16 +2,17 @@ from pyglet import text, font
 from time import time
 from noise import snoise2
 from random import randrange
+import os.path
 
-font.add_file(r'font\DFHsiuW3.ttc')
-font.add_file(r'font\DFErW3.ttc')
-font.add_file(r'font\MLingWaiFHK-Light.otf')
-font.add_file(r'font\AdobeFanHeitiStdB.otf')
-font.add_file(r'font\AdobeFangsongStdR.otf')
-font.add_file(r'font\NotoSansCJKtc-Bold.otf')
-font.add_file(r'font\NotoSansCJKtc-Black.otf')
-font.add_file(r'font\NotoSansCJKtc-Light.otf')
-font.add_file(r'font\NotoSansCJKtc-Thin.otf')
+font.add_file(os.path.join('font','DFHsiuW3.ttc'))
+font.add_file(os.path.join('font','DFErW3.ttc'))
+font.add_file(os.path.join('font','MLingWaiFHK-Light.otf'))
+font.add_file(os.path.join('font','AdobeFanHeitiStdB.otf'))
+font.add_file(os.path.join('font','AdobeFangsongStdR.otf'))
+font.add_file(os.path.join('font','NotoSansCJKtc-Bold.otf'))
+font.add_file(os.path.join('font','NotoSansCJKtc-Black.otf'))
+font.add_file(os.path.join('font','NotoSansCJKtc-Light.otf'))
+font.add_file(os.path.join('font','NotoSansCJKtc-Thin.otf'))
 
 
 def map_range(OldValue, OldMin, OldMax, NewMin, NewMax):
@@ -46,7 +47,7 @@ class MoveText(text.Label):
         if self.align == 'left':
             self.x += 0
         elif self.align == 'right':
-            self.x += 2
+            self.x += 1
 
     def fade(self):
         if self.align == 'left': # chinese
