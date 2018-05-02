@@ -9,14 +9,15 @@ import csv
 
 currentFrame = 0
 pgmStartTime = time()
+item=0
 # pathlib.Path(r'screenshots\{}'.format(pgmStartTime)
 #              ).mkdir(parents=True, exist_ok=True)
 
-# display = pyglet.window.get_platform().get_default_display()
-# screens = display.get_screens()
-# window = pyglet.window.Window(width=1920, height=640, vsync=True,fullscreen=True,screen=screens[0])
-window = pyglet.window.Window(
-    width=1920, height=548, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
+display = pyglet.window.get_platform().get_default_display()
+screens = display.get_screens()
+window = pyglet.window.Window(width=1920, height=1080, vsync=True,fullscreen=True,screen=screens[1])
+# window = pyglet.window.Window(
+#     width=1920, height=548, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
 # window.set_location(0, (1080-window.height)//2)
 window.set_caption('Certificate of Death v0.2')
 fps_display = pyglet.window.FPSDisplay(window)
@@ -25,6 +26,7 @@ chi_batch_text = graphics.Batch()
 eng_batch_text = graphics.Batch()
 batch_quad = graphics.Batch()
 batch_cert = graphics.Batch()
+
 
 cert_img = []
 for i in range(1, 7):
@@ -83,14 +85,15 @@ def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
         color = (255, 255, 255, 0)
         batch_text = chi_batch_text
         x = uniform(0, window.width / 2)
-        y = randrange(0, 600, 30)
+        y = randrange(0, 548, 30)
     elif lang == 'eng':
         font_size = 14  # 14
         font_name = 'Noto Sans CJK TC Light'
-        color = (0, 0, 0, 0)
+        # color = (0, 0, 0, 0)
+        color = (255, 255, 255, 0)
         batch_text = eng_batch_text
         x = uniform(window.width/2, window.width*3/4)
-        y = randrange(0, 600, 28)
+        y = randrange(0, 548, 28)
     width = w
     return MoveText(text=text, font_size=font_size, x=x, y=y, font_name=font_name, width=None, batch=batch_text, align=align, anchor_x='center', color=color)
     # return MoveText(text=choice(tlist), font_size=30, x=uniform(0, window.width/3), y=y,font_name='DFPHsiuW3-B5')
@@ -119,7 +122,7 @@ createTime = time()
 wh = 255
 quad = pyglet.graphics.vertex_list(4,
                                    ('v2i', create_quad_vertex_list(
-                                       0, 0, window.width, window.height)),
+                                       0, 0, window.width, window.height//2)),
                                    ('c3B', (0, 0, 0, wh, wh, wh, wh, wh, wh, 0, 0, 0)))
 # quad = batch_quad.add(4, pyglet.gl.GL_QUADS, None,
 #                       ('v2i', create_quad_vertex_list(0, 0, 1920, 640)),
@@ -151,6 +154,7 @@ for i in range(x_num):
         # text.Label(text=str(students[i+j*x_num]['date']), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
         #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(window.height//y_num)+window.height//(y_num*4)*1, batch=batch_quad, dpi=100)
 
+# item_count = text.Label(text=item, font_name='Noto Sans CJK TC Thin', color=(255,255,255,255), font_size=15, x=10,y=1000)
 
 @window.event
 def on_key_press(symbol, modifiers):
@@ -162,12 +166,13 @@ def on_key_press(symbol, modifiers):
 @window.event
 def on_draw():
     window.clear()
-    quad.draw(pyglet.gl.GL_QUADS)
-    batch_cert.draw()
+    # quad.draw(pyglet.gl.GL_QUADS)
+    # batch_cert.draw()
     # batch_quad.draw()
     eng_batch_text.draw()
     chi_batch_text.draw()
     fps_display.draw()
+    # item_count.draw()
 
 
 @window.event
@@ -190,16 +195,19 @@ def update(dt):
                 eng_mt_list, eng_list, 500, 'right', 'eng'))
         createTime = time()
 
+    # global item
+    # item = str(len(chi_mt_list), len(eng_mt_list), len(chi_mt_list) + len(eng_mt_list))
+
 
 # pyglet.clock.schedule(update)
 pyglet.clock.schedule_interval(update, 1/30.0)
 pyglet.app.run()
 
-for all in chi_mt_list:
-    print(all.text)
-    print('x', all.x, 'y', all.y, 'width',
-          all.content_width, 'height', all.content_height)
-for all in eng_mt_list:
-    print(all.text)
-    print(all.x, all.y, all.content_width, all.content_height)
-print(len(chi_mt_list), len(eng_mt_list))
+# for all in chi_mt_list:
+#     print(all.text)
+#     print('x', all.x, 'y', all.y, 'width',
+#           all.content_width, 'height', all.content_height)
+# for all in eng_mt_list:
+#     print(all.text)
+#     print(all.x, all.y, all.content_width, all.content_height)
+# print(len(chi_mt_list), len(eng_mt_list))

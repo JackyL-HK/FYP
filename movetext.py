@@ -46,7 +46,7 @@ class MoveText(text.Label):
         if self.align == 'left':
             self.x += 0
         elif self.align == 'right':
-            self.x += 1
+            self.x += 2
 
     def fade(self):
         if self.align == 'left': # chinese
