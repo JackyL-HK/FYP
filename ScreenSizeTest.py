@@ -10,7 +10,7 @@ window = pyglet.window.Window(
     width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
 window.set_caption('Projection Size Test')
 fps_display = pyglet.window.FPSDisplay(window)
-x, y, w, h = 0, 0, window.width, window.height//2
+x, y, w, h = 0, 0, window.width, 551
 
 
 def create_quad_vertex_list(x, y, width, height):
