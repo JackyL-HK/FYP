@@ -10,14 +10,16 @@ import os.path
 
 currentFrame = 0
 pgmStartTime = time()
-item=0
-preset=0
+item = 0
+preset = 0
+screen_height = 551
 # pathlib.Path(r'screenshots\{}'.format(pgmStartTime)
-             # ).mkdir(parents=True, exist_ok=True)
+# ).mkdir(parents=True, exist_ok=True)
 
 display = pyglet.window.get_platform().get_default_display()
 screens = display.get_screens()
-window = pyglet.window.Window(width=1920, height=1080, vsync=True,fullscreen=True,screen=screens[0])
+window = pyglet.window.Window(
+    width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
 # window = pyglet.window.Window(
 #     width=1920, height=548, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
 # window.set_location(0, (1080-window.height)//2)
@@ -28,11 +30,10 @@ chi_batch_text = graphics.Batch()
 eng_batch_text = graphics.Batch()
 batch_quad = graphics.Batch()
 batch_cert = graphics.Batch()
+test_name = graphics.Batch()
 
 
-cert_img = []
-for i in range(1, 7):
-    cert_img.append(image.load('cert00{}.jpg'.format(i)))
+cert_img = image.load(os.path.join('final_cert.jpg'))
 
 
 def loadLinesFromTxt(filepath):
@@ -75,7 +76,7 @@ def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
     if lang == 'chi':
         font_name = 'Noto Sans CJK TC Bold'
         # font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
-        font_size = 25 # 15
+        font_size = 25  # 15
         # if any(t == '攰' for t in text):
         #     font_name = choice(
         #         ['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
@@ -127,46 +128,45 @@ createTime = time()
 wh = 255
 quad = pyglet.graphics.vertex_list(4,
                                    ('v2i', create_quad_vertex_list(
-                                       0, 0, window.width, 551)),
+                                       0, 0, window.width, screen_height)),
                                    ('c3B', (100, 100, 100, wh, wh, wh, wh, wh, wh, 100, 100, 100)))
 sign = pyglet.graphics.vertex_list(4,
-                                   ('v2i', create_quad_vertex_list(0,0,300,100)),
+                                   ('v2i', create_quad_vertex_list(0, 0, 300, 100)),
                                    ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
 wip = text.Label(text='Work in Progress', font_name='Noto Sans CJK TC Bold', color=(200, 0, 0, 200),
-           font_size=25, anchor_x='left', anchor_y='center', x=10,y=50)
-# quad = batch_quad.add(4, pyglet.gl.GL_QUADS, None,
-#                       ('v2i', create_quad_vertex_list(0, 0, 1920, 640)),
-#                       ('c3B', (0, 0, 0, wh, wh, wh, wh, wh, wh, 0, 0, 0)))
+                 font_size=25, anchor_x='left', anchor_y='center', x=10, y=50)
 
 students = loadStudentsList('students_list.csv')
 
 cert_sprites = []
 # x_num, y_num = 20, 4 # for A4 portrait
 # x_num, y_num = 10, 4 # for A3 landscape
-x_num, y_num = 10, 2  # for A2 portrait
-# x_num, y_num = 5, 2 # for A1 landscape
+# x_num, y_num = 10, 2  # for A2 portrait
+x_num, y_num = 5, 2  # for A1 landscape
 # x_num, y_num = 5, 1 # for A0 portrait
 for i in range(x_num):
     for j in range(y_num):
         # wh = int(randint(0, 255))
-        wh = int(map_range(int(students[i+j*x_num]['age']), int(min(row['age']
-                                                                    for row in students)), int(max(row['age'] for row in students)), 0, 255))
-        # batch_quad.add(4, pyglet.gl.GL_QUADS, None, ('v2i', create_quad_vertex_list(i*(window.width//x_num), j*(window.height//y_num),
-        #                                                                             window.width//x_num, window.height//y_num)), ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
+        # wh = int(map_range(int(students[i+j*x_num]['age']), int(min(row['age']
+        #                                                             for row in students)), int(max(row['age'] for row in students)), 0, 255))
+        # batch_quad.add(4, pyglet.gl.GL_QUADS, None, ('v2i', create_quad_vertex_list(i*(window.width//x_num), j*(screen_height//y_num),
+        #                                                                             window.width//x_num, screen_height//y_num)), ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
         cert_sprites.append(sprite.Sprite(
-            choice(cert_img), i*(window.width//x_num), j*(window.height//y_num), batch=batch_cert))
-        text.Label(text=str(students[i+j*x_num]['\ufeffname']), font_name='Noto Sans CJK TC Bold', color=(0, 0, 0, 130),
-                   font_size=15, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*16)*13, y=j*(window.height//y_num)+window.height//(y_num*64)*36, batch=batch_quad)
+            cert_img, i*(window.width//x_num), j*(screen_height//y_num), batch=batch_cert))
+        text.Label(text=str(students[i+j*x_num]['\ufeffname']), font_name='Adobe Kaiti Std R', color=(115, 177, 234, 255),
+                   font_size=15, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+320, y=j*(screen_height//y_num)+60, batch=test_name)
+        text.Label(text=str(students[i+j*x_num]['date']), font_name='Noto Sans CJK TC Bold', color=(115, 177, 234, 255),
+                   font_size=12, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+335, y=j*(screen_height//y_num)+205, batch=test_name)
+        text.Label(text=str(students[i+j*x_num]['grade']), font_name='Adobe Kaiti Std R', color=(115, 177, 234, 255),
+                   font_size=14, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+325, y=j*(screen_height//y_num)+165, batch=test_name)
         # text.Label(text=str(students[i+j*x_num]['age']), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
-        #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(window.height//y_num)+window.height//(y_num*4)*3, batch=batch_quad)
+        #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(screen_height//y_num)+screen_height//(y_num*4)*3, batch=test_name)
         # text.Label(text=str(students[i+j*x_num]['sex'].capitalize()), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
-        #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(window.height//y_num)+window.height//(y_num*4)*2, batch=batch_quad)
-        # text.Label(text=str(students[i+j*x_num]['date']), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
-        #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(window.height//y_num)+window.height//(y_num*4)*1, batch=batch_quad, dpi=100)
+        #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(screen_height//y_num)+screen_height//(y_num*4)*2, batch=test_name)
 
 # item_count = text.Label(text=item, font_name='Noto Sans CJK TC Thin', color=(255,255,255,255), font_size=15, x=10,y=1000)
-test_name = text.Label(text=str(students[1]['\ufeffname']), font_name='Noto Sans CJK TC Bold', color=(255,255,255,255),
-           font_size=20, anchor_x='center', anchor_y='center', x=920,y=210)
+
+
 @window.event
 def on_key_press(symbol, modifiers):
     if symbol == pyglet.window.key.ENTER:
@@ -181,12 +181,12 @@ def on_draw():
         quad.draw(pyglet.gl.GL_QUADS)
     # batch_cert.draw()
     test_name.draw()
-    batch_quad.draw()
+    # batch_quad.draw()
     eng_batch_text.draw()
     chi_batch_text.draw()
-    sign.draw(pyglet.gl.GL_QUADS)
-    wip.draw()
-    fps_display.draw()
+    # sign.draw(pyglet.gl.GL_QUADS)
+    # wip.draw()
+    # fps_display.draw()
     # # item_count.draw()
 
 

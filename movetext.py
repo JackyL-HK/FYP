@@ -13,6 +13,7 @@ font.add_file(os.path.join('font','NotoSansCJKtc-Bold.otf'))
 font.add_file(os.path.join('font','NotoSansCJKtc-Black.otf'))
 font.add_file(os.path.join('font','NotoSansCJKtc-Light.otf'))
 font.add_file(os.path.join('font','NotoSansCJKtc-Thin.otf'))
+font.add_file(os.path.join('font','AdobeKaitiStd-Regular.otf'))
 
 
 def map_range(OldValue, OldMin, OldMax, NewMin, NewMax):
@@ -41,8 +42,10 @@ class MoveText(text.Label):
 
     def update(self,dt):
         self.fade()
+        # self.color = (self.color[0], self.color[1],
+        #               self.color[2], int(map_range(snoise2(self.index, self.n), -1, 1, 0.5, 1) * self.scale))
         self.color = (self.color[0], self.color[1],
-                      self.color[2], int(map_range(snoise2(self.index, self.n), -1, 1, 0.5, 1) * self.scale))
+                      self.color[2], self.scale)
         self.n += 0.001
         if self.align == 'left':
             self.x += 0
