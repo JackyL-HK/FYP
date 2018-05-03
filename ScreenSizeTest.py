@@ -22,6 +22,9 @@ wh = 255
 quad = pyglet.graphics.vertex_list(4,
                                    ('v2i', create_quad_vertex_list(x, y, w, h)),
                                    ('c3B', (bk, bk, bk, wh, wh, wh, wh, wh, wh, bk, bk, bk)))
+sign = pyglet.graphics.vertex_list(4,
+                                   ('v2i', create_quad_vertex_list(0,0,300,100)),
+                                   ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
 # quad = batch_quad.add(4, pyglet.gl.GL_QUADS, None,
 #                       ('v2i', create_quad_vertex_list(0, 0, 1920, 640)),
 #                       ('c3B', (0, 0, 0, wh, wh, wh, wh, wh, wh, 0, 0, 0)))
@@ -51,6 +54,7 @@ def on_draw():
     # # batch_quad.draw()
     # eng_batch_text.draw()
     # chi_batch_text.draw()
+
     fps_display.draw()
     # # item_count.draw()
 

@@ -129,6 +129,11 @@ quad = pyglet.graphics.vertex_list(4,
                                    ('v2i', create_quad_vertex_list(
                                        0, 0, window.width, 551)),
                                    ('c3B', (100, 100, 100, wh, wh, wh, wh, wh, wh, 100, 100, 100)))
+sign = pyglet.graphics.vertex_list(4,
+                                   ('v2i', create_quad_vertex_list(0,0,300,100)),
+                                   ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
+wip = text.Label(text='Work in Progress', font_name='Noto Sans CJK TC Bold', color=(200, 0, 0, 200),
+           font_size=25, anchor_x='left', anchor_y='center', x=10,y=50)
 # quad = batch_quad.add(4, pyglet.gl.GL_QUADS, None,
 #                       ('v2i', create_quad_vertex_list(0, 0, 1920, 640)),
 #                       ('c3B', (0, 0, 0, wh, wh, wh, wh, wh, wh, 0, 0, 0)))
@@ -179,6 +184,8 @@ def on_draw():
     batch_quad.draw()
     eng_batch_text.draw()
     chi_batch_text.draw()
+    sign.draw(pyglet.gl.GL_QUADS)
+    wip.draw()
     fps_display.draw()
     # # item_count.draw()
 
