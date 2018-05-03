@@ -5,6 +5,7 @@ from time import time
 
 display = pyglet.window.get_platform().get_default_display()
 screens = display.get_screens()
+# print(screens)
 window = pyglet.window.Window(
     width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
 window.set_caption('Projection Size Test')

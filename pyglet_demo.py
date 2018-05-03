@@ -87,18 +87,18 @@ def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
         color = (255, 255, 255, 0)
         batch_text = chi_batch_text
         x = uniform(0, window.width / 2)
-        y = randrange(0, 548, 30)
+        y = randrange(0, 548, 10)
     elif lang == 'eng':
         font_size = 24  # 14
         # font_name = 'Noto Sans CJK TC Light'
         font_name = 'Noto Sans CJK TC Black'
         if preset == 0:
-            color = (255, 255, 255, 0)
+            color = (150, 150, 150, 0)
         elif preset == 1:
             color = (0, 0, 0, 0)
         batch_text = eng_batch_text
         x = uniform(window.width/2, window.width*3/4)
-        y = randrange(0, 548, 28)
+        y = randrange(0, 548, 10)
     width = w
     return MoveText(text=text, font_size=font_size, x=x, y=y, font_name=font_name, width=None, batch=batch_text, align=align, anchor_x='center', color=color)
     # return MoveText(text=choice(tlist), font_size=30, x=uniform(0, window.width/3), y=y,font_name='DFPHsiuW3-B5')
@@ -127,8 +127,8 @@ createTime = time()
 wh = 255
 quad = pyglet.graphics.vertex_list(4,
                                    ('v2i', create_quad_vertex_list(
-                                       0, 0, window.width, window.height//2)),
-                                   ('c3B', (0, 0, 0, wh, wh, wh, wh, wh, wh, 0, 0, 0)))
+                                       0, 0, window.width, 551)),
+                                   ('c3B', (100, 100, 100, wh, wh, wh, wh, wh, wh, 100, 100, 100)))
 # quad = batch_quad.add(4, pyglet.gl.GL_QUADS, None,
 #                       ('v2i', create_quad_vertex_list(0, 0, 1920, 640)),
 #                       ('c3B', (0, 0, 0, wh, wh, wh, wh, wh, wh, 0, 0, 0)))
@@ -167,7 +167,7 @@ def on_key_press(symbol, modifiers):
     if symbol == pyglet.window.key.ENTER:
         pyglet.image.get_buffer_manager().get_color_buffer().save(
             'screenshot{}.png'.format(time()))
-0.
+
 
 @window.event
 def on_draw():
@@ -176,11 +176,11 @@ def on_draw():
         quad.draw(pyglet.gl.GL_QUADS)
     # batch_cert.draw()
     test_name.draw()
-    # # batch_quad.draw()
+    batch_quad.draw()
     eng_batch_text.draw()
     chi_batch_text.draw()
     fps_display.draw()
-     # # item_count.draw()
+    # # item_count.draw()
 
 
 @window.event
@@ -194,7 +194,7 @@ def update(dt):
     mt_update(chi_mt_list, dt)
     mt_update(eng_mt_list, dt)
     # if time() - createTime > randint(3, 8):
-    if time() - createTime > 1 and len(chi_mt_list)+len(eng_mt_list) < 15:
+    if time() - createTime > 2 and (len(chi_mt_list)+len(eng_mt_list)) < 10:
         if choice([True, False]):
             chi_mt_list.append(createLine(
                 chi_mt_list, chi_list, 5, 'left', 'chi'))
@@ -202,7 +202,6 @@ def update(dt):
             eng_mt_list.append(createLine(
                 eng_mt_list, eng_list, 500, 'right', 'eng'))
         createTime = time()
-
     # global item
     # item = str(len(chi_mt_list), len(eng_mt_list), len(chi_mt_list) + len(eng_mt_list))
 
