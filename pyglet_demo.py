@@ -13,15 +13,21 @@ pgmStartTime = time()
 item = 0
 preset = 0
 screen_height = 551
+text_height = 50
+linespace = 2
+empty = [True]*(screen_height//text_height)*linespace
+# empty = [True, False, True, False, True, False, False, True, False, False, True] # 1,3,5,6,8,9
+# print(type(list(enumerate(empty))))
+
+# print(choice(list(i for i,c in enumerate(empty) if c== False)))
 # pathlib.Path(r'screenshots\{}'.format(pgmStartTime)
 # ).mkdir(parents=True, exist_ok=True)
 
 display = pyglet.window.get_platform().get_default_display()
 screens = display.get_screens()
+# window = pyglet.window.Window(width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
 window = pyglet.window.Window(
-    width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
-# window = pyglet.window.Window(
-#     width=1920, height=548, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
+    width=1920, height=screen_height, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
 # window.set_location(0, (1080-window.height)//2)
 window.set_caption('Certificate of Death v0.2')
 fps_display = pyglet.window.FPSDisplay(window)
@@ -52,10 +58,10 @@ def loadLinesFromCsv(filepath):
     scr = []
     with open(str(filepath), 'r', encoding='utf-8') as fp:
         for row in csv.DictReader(fp):
-            if (float(row['polarity']) < -0.2):
+            # if (float(row['polarity']) < -0.2):
                 # print("{0:.02f}".format(
                 #     float(row['polarity'])), '|', row['string'])
-                scr.append(row['string'])
+            scr.append(row['string'])
     return scr
 
 
@@ -71,58 +77,52 @@ def create_quad_vertex_list(x, y, width, height):
     return x, y, x + width, y, x + width, y + height, x, y + height
 
 
-def createLine(mtlist, tlist, w=None, align='right', lang='eng'):
+def createLine(mtlist, tlist, w=None, lang='eng'):
     text = choice(tlist)
     if lang == 'chi':
         font_name = 'Noto Sans CJK TC Bold'
-        # font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
         font_size = 25  # 15
-        # if any(t == '攰' for t in text):
-        #     font_name = choice(
-        #         ['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'])
-        # else:
-        #     font_name = choice(['Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin',
-        #                         'MLingWaiFHK-Light', 'DFPHsiuW3-B5', 'DFPErW3-B5'])
-        # font_size = 20 if len(text) < 15 or font_name not in [
-        #                       'Noto Sans CJK TC Bold', 'Noto Sans CJK TC Thin'] else 15
         color = (255, 255, 255, 0)
         batch_text = chi_batch_text
-        x = uniform(0, window.width / 2)
-        y = randrange(0, 548, 10)
+        align = 'left'
+        x = uniform(window.width/3, window.width*3/4)
+        # y = randrange(0, screen_height, 10)
+        index = choice(list(i for i, c in enumerate(empty) if c == True))
+        empty[index] = False
+        y = index*25+1
     elif lang == 'eng':
         font_size = 24  # 14
-        # font_name = 'Noto Sans CJK TC Light'
         font_name = 'Noto Sans CJK TC Black'
         if preset == 0:
             color = (150, 150, 150, 0)
         elif preset == 1:
             color = (0, 0, 0, 0)
         batch_text = eng_batch_text
-        x = uniform(window.width/2, window.width*3/4)
-        y = randrange(0, 548, 10)
-    width = w
-    return MoveText(text=text, font_size=font_size, x=x, y=y, font_name=font_name, width=None, batch=batch_text, align=align, anchor_x='center', color=color)
-    # return MoveText(text=choice(tlist), font_size=30, x=uniform(0, window.width/3), y=y,font_name='DFPHsiuW3-B5')
-    # return MoveText(text=choice(tlist), font_size=20, x=uniform(0, window.width/3), y=y,font_name='Adobe Fan Heiti Std B')
-    # return MoveText(text=choice(tlist), font_size=20, x=uniform(0, window.width/3), y=y, font_name='Noto Sans CJK TC Black')
+        align = 'right'
+        x = uniform(0, window.width/3)
+        # y = randrange(0, screen_height, 10)
+        index = choice(list(i for i, c in enumerate(empty) if c == True))
+        empty[index] = False
+        y = index*25+1
+    return MoveText(text=text, font_size=font_size, x=x, y=y, font_name=font_name, width=None, batch=batch_text, align=align, anchor_x='left', anchor_y='top', color=color, index=index)
 
 
 def mt_update(mtlist, dt):
     for mt in mtlist:
-        if not mt.end:
-            mt.update(dt)
-        else:
+        if mt.end or mt.x+mt.content_width < 0:
+            empty[mt.index] = True
             mtlist.remove(mt)
+        else:
+            mt.update(dt)
     # print(len(mtlist))
 
 
 chi_list = loadLinesFromTxt("fbContent.txt")
-eng_list = loadLinesFromTxt("LongLines.txt")
+# eng_list = loadLinesFromTxt("LongLines.txt")
+eng_list = loadLinesFromCsv('NegPolarity-TextBlob-Default.csv')
 
 chi_mt_list = list()
-chi_mt_list.append(createLine(chi_mt_list, chi_list, 5, 'left', 'chi'))
 eng_mt_list = list()
-eng_mt_list.append(createLine(eng_mt_list, eng_list, 500, 'right', 'eng'))
 createTime = time()
 
 wh = 255
@@ -153,12 +153,12 @@ for i in range(x_num):
         #                                                                             window.width//x_num, screen_height//y_num)), ('c3B', (wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh, wh)))
         cert_sprites.append(sprite.Sprite(
             cert_img, i*(window.width//x_num), j*(screen_height//y_num), batch=batch_cert))
-        text.Label(text=str(students[i+j*x_num]['\ufeffname']), font_name='Adobe Kaiti Std R', color=(115, 177, 234, 255),
-                   font_size=15, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+320, y=j*(screen_height//y_num)+60, batch=test_name)
-        text.Label(text=str(students[i+j*x_num]['date']), font_name='Noto Sans CJK TC Bold', color=(115, 177, 234, 255),
+        text.Label(text=str(students[i+j*x_num]['\ufeffname']), font_name='Adobe Kaiti Std R', color=(255,255,255,100),
+                   font_size=16, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+320, y=j*(screen_height//y_num)+60, batch=test_name)
+        text.Label(text=str(students[i+j*x_num]['date']), font_name='Noto Sans CJK TC Bold', color=(255,255,255,100),
                    font_size=12, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+335, y=j*(screen_height//y_num)+205, batch=test_name)
-        text.Label(text=str(students[i+j*x_num]['grade']), font_name='Adobe Kaiti Std R', color=(115, 177, 234, 255),
-                   font_size=14, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+325, y=j*(screen_height//y_num)+165, batch=test_name)
+        text.Label(text=str(students[i+j*x_num]['grade']), font_name='Adobe Kaiti Std R', color=(255,255,255,100),
+                   font_size=16, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+325, y=j*(screen_height//y_num)+165, batch=test_name)
         # text.Label(text=str(students[i+j*x_num]['age']), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
         #            font_size=30, anchor_x='center', anchor_y='center', x=i*(window.width//x_num)+window.width//(x_num*2), y=j*(screen_height//y_num)+screen_height//(y_num*4)*3, batch=test_name)
         # text.Label(text=str(students[i+j*x_num]['sex'].capitalize()), font_name='Noto Sans CJK TC Bold', color=(255, 255, 255, 30),
@@ -186,7 +186,7 @@ def on_draw():
     chi_batch_text.draw()
     # sign.draw(pyglet.gl.GL_QUADS)
     # wip.draw()
-    # fps_display.draw()
+    fps_display.draw()
     # # item_count.draw()
 
 
@@ -201,16 +201,17 @@ def update(dt):
     mt_update(chi_mt_list, dt)
     mt_update(eng_mt_list, dt)
     # if time() - createTime > randint(3, 8):
-    if time() - createTime > 2 and (len(chi_mt_list)+len(eng_mt_list)) < 10:
+    # if time() - createTime > 2 and (len(chi_mt_list)+len(eng_mt_list)) < 10:
+    if time() - createTime > 2 and any(empty):
         if choice([True, False]):
             chi_mt_list.append(createLine(
-                chi_mt_list, chi_list, 5, 'left', 'chi'))
+                chi_mt_list, chi_list, 5, 'chi'))
         else:
             eng_mt_list.append(createLine(
-                eng_mt_list, eng_list, 500, 'right', 'eng'))
+                eng_mt_list, eng_list, 500, 'eng'))
         createTime = time()
     # global item
-    # item = str(len(chi_mt_list), len(eng_mt_list), len(chi_mt_list) + len(eng_mt_list))
+    # print(len(chi_mt_list), len(eng_mt_list), len(chi_mt_list) + len(eng_mt_list))
 
 
 # pyglet.clock.schedule(update)
