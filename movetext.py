@@ -22,7 +22,7 @@ def map_range(OldValue, OldMin, OldMax, NewMin, NewMax):
 
 class MoveText(text.Label):
 
-    def __init__(self, text='', font_name=None, font_size=None, bold=False, italic=False, color=None, x=0, y=0, width=None, height=None, anchor_x='left', anchor_y='center', align='left', multiline=False, dpi=None, batch=None, group=None, index=0):
+    def __init__(self, text='', font_name=None, font_size=None, bold=False, italic=False, color=None, x=0, y=0, width=None, height=None, anchor_x='left', anchor_y='center', align='left', multiline=False, dpi=None, batch=None, group=None, index=None, hold_time=None):
         super().__init__(text, font_name, font_size, bold, italic, color, x, y,
                          width, height, anchor_x, anchor_y, align, multiline, dpi, batch, group)
 
@@ -36,7 +36,7 @@ class MoveText(text.Label):
         self.n = 0
         self.index = index
         self.fade_mode = 1  # 1: fade-in | 0: hold | -1: fade-out
-        self.hold_time = randrange(10, 20)  # hold time
+        self.hold_time = randrange(10, 20) if not hold_time else hold_time # hold time
         self.end = False
         self.align = align
 

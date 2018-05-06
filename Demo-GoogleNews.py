@@ -14,11 +14,12 @@ import csv
 from pathlib import Path
 
 print('Fetching news url from Google News...')
-urlList = list(search_news("Hong Kong, Student, Suicide", stop=5,
+urlList = list(search_news("Hong Kong, Student, Suicide", stop=500,
                            tld='com.hk', tbs='ctr:countryHK', extra_params={'cr': 'countryHK'}))
 with open('news_url.txt', 'w+', encoding='utf-8') as fp:
     fp.write('\n'.join(urlList))
 print('Done fetching.')
+
 with open('pageContent.txt', 'w+', encoding='utf-8') as fp:
     for n, url in enumerate(urlList):
         print("\n", n, url)
