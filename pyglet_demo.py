@@ -30,9 +30,9 @@ x_num, y_num = 5, 2  # for A1 landscape
 
 display = pyglet.window.get_platform().get_default_display()
 screens = display.get_screens()
-# window = pyglet.window.Window(width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
-window = pyglet.window.Window(
-    width=1920, height=screen_height, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
+window = pyglet.window.Window(width=1920, height=1080, vsync=True, fullscreen=True, screen=screens[0])
+# window = pyglet.window.Window(
+#    width=1920, height=screen_height, vsync=True)  # 3.5:1 ratio // 4.2*1.2m
 # window.set_location(0, (1080-window.height)//2)
 window.set_caption('Certificate of Death v0.2')
 fps_display = pyglet.window.FPSDisplay(window)
@@ -222,7 +222,7 @@ def on_draw():
     chi_batch_text.draw()
     # sign.draw(pyglet.gl.GL_QUADS)
     # wip.draw()
-    fps_display.draw()
+    # fps_display.draw()
 
 
 @window.event
@@ -238,7 +238,7 @@ def update(dt):
     st_update(student_mt_list, dt)
     # if time() - createTime > randint(3, 8):
     # if time() - createTime > 2 and (len(chi_mt_list)+len(eng_mt_list)) < 10:
-    if time() - createTime > 3 and any(empty):
+    if time() - createTime > 5 and any(empty):
         # if choice([True, False]):
         if random() > 0.33:
             chi_mt_list.append(createLine(
